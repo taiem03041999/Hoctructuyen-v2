@@ -18,7 +18,7 @@
     &-scroll,
     &-sub {
         .header-wrapper {
-            max-width: 1600px;
+            max-width: 1728px;
 
             @include responsive_fit {
                 max-width: 98%;
@@ -38,7 +38,7 @@
 
             &__cover {
                 margin-bottom: 0;
-                max-width: 45%;
+                max-width: 42%;
                 background-color: #eff3f7;
 
                 @include responsive_bothTM {
@@ -162,12 +162,14 @@
         &__link {
             position: relative;
             color: $color-title;
+            padding: 5px 12px;
+            font-size: 14px;
 
             &::after {
                 position: absolute;
                 content: "";
                 left: 50%;
-                bottom: calc(100% + 15px);
+                bottom: calc(100% + 20px);
                 height: 3.4px;
                 width: 100%;
                 border-radius: 20px;

@@ -1,6 +1,16 @@
 $font-main: "Roboto", sans-serif;
 $font-mon: "Montserrat", sans-serif;
 
+@font-face {
+    font-family: "UTMASHeartbeat";
+    src:
+        local("UTMASHeartbeat"),
+        url("/assets/font/UTM\ A\ S\ Heartbeat.ttf") format("truetype");
+    font-style: normal;
+}
+
+$font-title: "UTMASHeartbeat", sans-serif;
+
 // ======================== Color Main ========================
 $color-main: #24adc1;
 $color-title: #18191b;

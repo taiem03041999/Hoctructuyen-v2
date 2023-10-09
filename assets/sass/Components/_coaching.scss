@@ -18,6 +18,10 @@
         width: 564px;
         margin: 0 auto 35px;
 
+        @include responsive_big16 {
+            margin: 0 auto 30px;
+        }
+
         @include responsive_table {
             width: 100%;
         }
@@ -31,8 +35,16 @@
             font-size: 30px;
             margin-bottom: 10px;
 
-            @include responsive_mobile {
+            @include responsive_big16 {
                 font-size: 24px;
+            }
+
+            @include responsive_table {
+                font-size: 22px;
+            }
+
+            @include responsive_mobile {
+                font-size: 18px;
             }
         }
 

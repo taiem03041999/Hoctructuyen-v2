@@ -40,19 +40,27 @@
         @include flexBox(bothSides);
         margin-bottom: 35px;
 
-        @include responsive_mobile {
+        @include responsive_big16 {
             margin-bottom: 30px;
+        }
+
+        @include responsive_mobile {
+            margin-bottom: 25px;
         }
 
         &__title {
             font-size: 30px;
 
-            @include responsive_table {
+            @include responsive_big16 {
                 font-size: 24px;
             }
 
+            @include responsive_table {
+                font-size: 22px;
+            }
+
             @include responsive_mobile {
-                font-size: 20px;
+                font-size: 18px;
             }
         }
 
@@ -74,7 +82,6 @@
         }
     }
 
-    // primary
     &-primary {
         color: #fff;
         position: relative;
@@ -188,7 +195,6 @@
         }
     }
 
-    // secondary
     &-secondary {
         &:hover {
             p {
@@ -199,6 +205,14 @@
         color: $color-title;
         position: relative;
         padding: 0 7px;
+
+        &.special {
+            margin-bottom: 30px;
+
+            @include responsive_HD {
+                margin-bottom: 24px;
+            }
+        }
 
         @include responsive_HD {
             padding: 0;
@@ -247,6 +261,14 @@
             @include responsive_mobile {
                 font-size: 16px;
                 line-height: 23px;
+            }
+
+            &.special {
+                margin-bottom: 10px;
+
+                @include responsive_HD {
+                    margin-bottom: 5px;
+                }
             }
         }
 
@@ -304,10 +326,13 @@
             svg {
                 margin-bottom: 3px;
             }
+
+            &.special {
+                padding-left: 0;
+            }
         }
     }
 
-    // item
     &-item {
         &:hover {
             p {
@@ -404,7 +429,6 @@
         }
     }
 
-    // slide
     &-slide {
         position: relative;
         // padding-bottom: 52px;
@@ -653,7 +677,7 @@
     }
 
     &-box {
-        @include gridBox(4, 0, 0);
+        @include gridBox(2, 0, 0);
 
         @include responsive_table {
             @include gridBox(2, 20px, 20px);
@@ -668,7 +692,13 @@
         }
 
         &__icon {
+            width: 67px;
             min-width: 67px;
+
+            @include responsive_mobile {
+                width: 50px;
+                min-width: 50px;
+            }
         }
 
         &__text {
@@ -682,12 +712,124 @@
         &__title {
             font-weight: 500;
             margin-bottom: 10px;
+
+            @include responsive_mobile {
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
         }
 
         &__sub {
             font-style: italic;
             font-size: 14px;
             color: $color-desc;
+        }
+    }
+
+    &-content {
+        margin-top: 50px;
+
+        @include responsive_mobile {
+            margin-top: 30px;
+        }
+
+        &__cover {
+            @include flexBox(hor);
+
+            @include responsive_bothTM {
+                flex-direction: column;
+            }
+
+            & + & {
+                margin-top: 50px;
+
+                @include responsive_bothTM {
+                    margin-top: 20px;
+                }
+            }
+
+            &.special {
+                flex-direction: row-reverse;
+
+                @include responsive_bothTM {
+                    flex-direction: column;
+                }
+
+                .training-content {
+                    &__inner {
+                        margin: 0 0 0 30px;
+
+                        @include responsive_bothTM {
+                            margin: 0 0 20px 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__inner {
+            margin: 0 30px 0 0;
+
+            @include responsive_bothTM {
+                margin: 0 0 20px 0;
+            }
+        }
+
+        &__inner,
+        &__img {
+            width: 50%;
+
+            @include responsive_bothTM {
+                width: 100%;
+            }
+        }
+
+        &__header {
+            margin-bottom: 30px;
+        }
+
+        &__title {
+            font-family: $font-title;
+            font-size: 50px;
+            color: $color-yellow;
+
+            @include responsive_HD {
+                font-size: 40px;
+            }
+
+            & > span {
+                font-size: 100px;
+
+                @include responsive_HD {
+                    font-size: 80px;
+                }
+            }
+        }
+
+        &__text {
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 40px;
+
+            @include responsive_big16 {
+                font-size: 22px;
+                line-height: initial;
+            }
+
+            @include responsive_HD {
+                font-size: 18px;
+            }
+
+            @include responsive_mobile {
+                font-size: 16px;
+            }
+        }
+
+        &__img {
+            & > img {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 }
