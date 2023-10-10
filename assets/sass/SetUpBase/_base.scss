@@ -12,7 +12,7 @@ body {
     color: $color-title;
 
     font-family: $font-main;
-    line-height: 1.6;
+    line-height: 21px;
 
     margin: 0;
     font-size: 16px;
@@ -23,6 +23,14 @@ body {
     .container-xl {
         @include responsive_big {
             max-width: 1383px;
+        }
+
+        @include responsive_fit {
+            max-width: 96%;
+        }
+
+        @include responsive_HD {
+            max-width: 100%;
         }
     }
 
@@ -35,6 +43,16 @@ body {
         @include responsive_bothTM {
             max-width: 100%;
         }
+    }
+
+    --width-tabs: 40px;
+
+    @include responsive_table {
+        --width-tabs: 20px;
+    }
+
+    @include responsive_mobile {
+        --width-tabs: 15px;
     }
 }
 

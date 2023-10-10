@@ -22,7 +22,6 @@
         }
     }
 
-    // sidebar
     &-sidebar {
         padding-right: 7px;
 
@@ -292,7 +291,6 @@
         }
     }
 
-    // content
     &-content {
         padding-left: 18px;
 
@@ -2357,6 +2355,7 @@
             transition: all 0.2s;
             border: 1.4px solid rgba(112, 112, 112, 0.25);
             border-radius: 7px;
+            @include flexBox(bothSides);
 
             span {
                 display: none;
@@ -2367,8 +2366,6 @@
                     display: block;
                 }
             }
-
-            @include flexBox(bothSides);
 
             input {
                 border: 0;

@@ -10,6 +10,14 @@
         @include responsive_mobile {
             padding-top: 240px;
         }
+
+        &.special {
+            padding-top: 190px;
+
+            @include responsive_bothTM {
+                padding-top: 0;
+            }
+        }
     }
 
     &-wrapper {
@@ -28,6 +36,16 @@
 
         @include responsive_mobile {
             margin: -210px auto 40px;
+        }
+
+        &.special {
+            margin: -150px auto 100px;
+            width: 996px;
+
+            @include responsive_bothTM {
+                margin: 30px auto 50px;
+                width: 100%;
+            }
         }
     }
 

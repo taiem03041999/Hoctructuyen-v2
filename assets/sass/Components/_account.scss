@@ -332,6 +332,10 @@
             border-radius: 7px;
             background-image: $back-btn;
 
+            @include responsive_HD {
+                padding: 10px 24px;
+            }
+
             &.small {
                 display: flex;
                 max-width: 67%;

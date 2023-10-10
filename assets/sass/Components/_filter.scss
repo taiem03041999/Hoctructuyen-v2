@@ -394,9 +394,17 @@
         margin-top: 38px;
         @include flexBox(bothSides);
 
+        @include responsive_mobile {
+            flex-direction: column;
+        }
+
         &__text {
             color: #707070;
             font-weight: 500;
+
+            @include responsive_mobile {
+                margin-bottom: 15px;
+            }
         }
 
         &__list {

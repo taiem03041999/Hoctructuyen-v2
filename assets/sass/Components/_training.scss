@@ -1,6 +1,10 @@
 .training {
     background-color: #fff;
 
+    &.special {
+        overflow: hidden;
+    }
+
     &-wrapper {
         padding: 60px 0 90px;
 
@@ -677,14 +681,10 @@
     }
 
     &-box {
-        @include gridBox(2, 0, 0);
+        @include gridBox(1, 35px, 35px);
 
-        @include responsive_table {
-            @include gridBox(2, 20px, 20px);
-        }
-
-        @include responsive_mobile {
-            @include gridBox(1, 20px, 0);
+        @include responsive_bothTM {
+            @include gridBox(1, 20px, 20px);
         }
 
         &__item {
@@ -702,10 +702,10 @@
         }
 
         &__text {
-            padding: 20px 20px 0 24px;
+            padding: 0 20px 0 24px;
 
             @include responsive_fit {
-                padding: 15px 15px 0 15px;
+                padding: 0 15px 0 15px;
             }
         }
 
@@ -791,10 +791,15 @@
         &__title {
             font-family: $font-title;
             font-size: 50px;
-            color: $color-yellow;
+            color: $color-main;
+            margin-bottom: -20px;
 
             @include responsive_HD {
                 font-size: 40px;
+            }
+
+            @include responsive_HD {
+                margin-bottom: -10px;
             }
 
             & > span {
@@ -829,6 +834,18 @@
             & > img {
                 width: 100%;
                 height: auto;
+
+                &:first-child {
+                    min-width: max-content;
+
+                    @include responsive_fit {
+                        min-width: 100%;
+                    }
+                }
+            }
+
+            img + img {
+                margin-top: 20px;
             }
         }
     }
