@@ -292,14 +292,15 @@
     }
 
     &-content {
-        padding-left: 18px;
+        margin-left: 18px;
+        border-radius: 14px;
+        overflow: hidden;
 
         @include responsive_bigLow {
-            padding-left: 0;
+            margin-left: 0;
         }
 
         &__wrapper {
-            border-radius: 14px;
             overflow: hidden;
             background-color: #fff;
 
@@ -316,6 +317,13 @@
                 @include responsive_mobile {
                     padding: 28px 16px 30px;
                 }
+            }
+
+            &.special2 {
+                padding-bottom: 25px;
+                min-height: auto;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
         }
 
