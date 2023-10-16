@@ -54,6 +54,16 @@ body {
     @include responsive_mobile {
         --width-tabs: 15px;
     }
+
+    --width-group: 25px;
+
+    @include responsive_HD {
+        --width-group: 20px;
+    }
+
+    @include responsive_mobile {
+        --width-group: 15px;
+    }
 }
 
 .hide {

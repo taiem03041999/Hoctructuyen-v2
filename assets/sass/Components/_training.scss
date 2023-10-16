@@ -282,6 +282,10 @@
 
         &__box {
             @include flexBox(hor);
+
+            &.special {
+                padding: 20px 0;
+            }
         }
 
         &__avatar {
@@ -291,14 +295,15 @@
 
             @include imgPT(0%);
             border-radius: 50%;
-
-            @include responsive_Change {
-                height: 40px;
-            }
         }
 
         &__text {
             padding-left: 8px;
+
+            &.special {
+                padding-left: 0;
+                margin-bottom: 8px;
+            }
         }
 
         &__name {
@@ -309,6 +314,8 @@
         &__position {
             font-size: 13px;
             opacity: 0.75;
+
+            color: rgba($color: $color-desc, $alpha: 0.75);
         }
 
         &__date {
