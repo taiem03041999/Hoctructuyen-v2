@@ -98,6 +98,12 @@ body {
     }
 }
 
+.gap {
+    &-20 {
+        height: 20px;
+    }
+}
+
 .modal-backdrop.show {
     z-index: 1076;
     opacity: 0.86;

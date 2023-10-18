@@ -15,6 +15,10 @@
                     flex-direction: column-reverse;
                 }
             }
+
+            &.column {
+                display: block;
+            }
         }
 
         &__form {
@@ -529,6 +533,11 @@
             @include responsive_HD {
                 flex-direction: column;
             }
+
+            &.special {
+                width: 100%;
+                margin-top: 15px;
+            }
         }
 
         &__sub {
@@ -555,6 +564,10 @@
                 background-color: #0088cc;
                 clip-path: polygon(0 0, 100% 0, 75% 50%, 100% 100%, 0 100%);
             }
+
+            &.special {
+                margin-left: 0;
+            }
         }
 
         &__type {
@@ -566,6 +579,10 @@
             @include responsive_HD {
                 max-width: 100%;
                 margin-top: 5px;
+            }
+
+            &.special {
+                max-width: 100%;
             }
 
             &::-webkit-scrollbar {
