@@ -23,6 +23,14 @@
                 color: $color-red;
             }
 
+            &.cmt {
+                padding-top: 30px;
+
+                @include responsive_fit {
+                    padding-top: 20px;
+                }
+            }
+
             & > span {
                 position: relative;
                 font-size: 13px;

@@ -385,15 +385,15 @@
             }
 
             .header-social__avatar {
-                @include responsive_pcLower {
-                    margin-right: 0;
-                    margin-bottom: 10px;
-                }
+                // @include responsive_pcLower {
+                //     margin-right: 0;
+                //     margin-bottom: 10px;
+                // }
 
-                @include responsive_bothTM {
-                    margin-right: 0;
-                    margin-bottom: 10px;
-                }
+                // @include responsive_bothTM {
+                //     margin-right: 0;
+                //     margin-bottom: 10px;
+                // }
             }
         }
 
@@ -401,9 +401,9 @@
             text-align: left;
             margin-right: 20px;
 
-            @include responsive_mobile {
-                margin-left: 14px;
-            }
+            // @include responsive_mobile {
+            //     margin-left: 14px;
+            // }
         }
 
         &__contact {
@@ -539,6 +539,10 @@
 
         &__list {
             padding: 0 0 0 20px;
+
+            &.special {
+                padding: 0;
+            }
         }
     }
 

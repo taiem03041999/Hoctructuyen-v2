@@ -670,6 +670,13 @@
                 min-width: 20px;
                 margin: 0 5px 3px 0;
             }
+
+            &.special {
+                border: 0;
+                width: max-content;
+                padding: 0;
+                margin-right: 25px;
+            }
         }
 
         &__cmt {
@@ -853,6 +860,191 @@
                 height: 65px;
                 margin-right: 5px;
             }
+        }
+    }
+
+    &-flex {
+        &__end {
+            @include flexBox(bottom);
+            flex-flow: row wrap;
+        }
+
+        &__center {
+            @include flexBox(hor);
+
+            @include responsive_mobile {
+                flex-direction: column;
+            }
+
+            &.special {
+                margin-bottom: 50px;
+
+                @include responsive_fit {
+                    margin-bottom: 40px;
+                }
+
+                @include responsive_bothTM {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        &__item {
+            width: 100%;
+
+            & + & {
+                margin-left: 40px;
+
+                @include responsive_mobile {
+                    margin: 25px 0 0 0;
+                }
+            }
+        }
+    }
+
+    &-detail {
+        &__text {
+            margin-bottom: 22px;
+            font-size: 14px;
+            color: $color-desc;
+            @include lineDot(5);
+        }
+
+        &__img {
+            @include imgPT(68%);
+            border-radius: 20px;
+
+            @include responsive_mobile {
+                border-radius: 10px;
+            }
+        }
+    }
+
+    &-cmt {
+        &__list {
+            padding-bottom: 50px;
+            border-bottom: 1px solid rgba($color: $color-desc, $alpha: 0.15);
+
+            @include responsive_fit {
+                padding-bottom: 40px;
+            }
+
+            @include responsive_bothTM {
+                padding-bottom: 30px;
+            }
+        }
+
+        &__item {
+            @include flexBox(top);
+
+            & + & {
+                margin-top: 30px;
+            }
+
+            &:first-child {
+                .group-cmt__icon {
+                    & > svg:nth-child(1) {
+                        path {
+                            fill: #9f9f9f;
+                        }
+                    }
+                }
+            }
+
+            &:last-child {
+                .group-cmt__content {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &__avt {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            @include imgPT(0%);
+            border: 5px solid #fff;
+            z-index: 2;
+        }
+
+        &__content {
+            position: relative;
+            width: 100%;
+            padding: 18px 28px 30px;
+
+            background-color: rgba($color: #eff3f7, $alpha: 0.5);
+            border-radius: 10px;
+            margin-left: -15px;
+
+            @include responsive_mobile {
+                padding: 18px 20px 25px;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 160px;
+                left: -23px;
+
+                width: 1px;
+                height: calc(100% - 140px);
+                background-color: rgba($color: $color-desc, $alpha: 0.15);
+            }
+        }
+
+        &__info {
+            margin-bottom: 20px;
+
+            @include responsive_HD {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__desc,
+        &__icon {
+            @include flexBox(hor);
+            flex-direction: column;
+        }
+
+        &__icon {
+            margin-top: 15px;
+
+            & > span {
+                font-weight: bold;
+            }
+        }
+
+        &__sub {
+            font-size: 14px;
+            color: $color-desc;
+            font-style: italic;
+        }
+
+        &__text {
+            font-size: 14px;
+            color: $color-desc;
+        }
+
+        &__img {
+            @include gridBox(4, 15px, 15px);
+
+            @include responsive_HD {
+                @include gridBox(3, 15px, 15px);
+            }
+
+            @include responsive_mobile {
+                @include gridBox(2, 10px, 10px);
+            }
+
+            img {
+                border-radius: 5px;
+            }
+        }
+
+        &__text + &__img {
+            margin-top: 20px;
         }
     }
 }
