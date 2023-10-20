@@ -1326,7 +1326,7 @@ body {
         color: #4e6579;
         width: 100% !important;
         border-radius: 7px;
-        padding: 13px 32px 13px 20px;
+        padding: 10px 32px 10px 20px;
         transition: all 0.2s;
         border: 1.4px solid rgba(112, 112, 112, 0.25); }
         .account-form__group .select2-selection--multiple:focus,
@@ -4175,6 +4175,13 @@ body {
     border-radius: 20px;
     padding: 5px 8px 5px 20px;
     background-color: #4e6579; }
+    .filter-course__detail.special {
+      border-radius: 5px;
+      background-color: rgba(23, 149, 168, 0.1); }
+      .filter-course__detail.special .filter-course__name {
+        font-size: 13px;
+        font-weight: 500;
+        color: #24adc1; }
   .filter-course__icon {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -11542,10 +11549,11 @@ i + i {
   margin-left: 40px; }
   @media only screen and (max-width: 1440px) {
     .group-cmt__file {
-      margin: 25px 0 0 0; } }
+      margin: 0 0 0 25px; } }
   @media only screen and (max-width: 46.1875em) {
     .group-cmt__file {
-      min-width: 100%; }
+      min-width: 100%;
+      margin: 25px 0 0 0; }
       .group-cmt__file .hide-on-mobile {
         display: none; } }
   .group-cmt__file.special {

@@ -1434,9 +1434,9 @@
                                                 <div class="gap-20 special"></div>
                                             </div>
 
-                                            <p class="group-cmt__title">
+                                            <label class="account-form__label">
                                                 Nội dung trao đổi
-                                            </p>
+                                            </label>
 
                                             <div class="group-cmt__editor">
 
@@ -1444,9 +1444,83 @@
                                         </div>
 
                                         <div class="user-content__update group-cmt__file special">
-                                            <p class="group-cmt__title">
+                                            <div class="account-form__group">
+                                                <label for="selectCity" class="account-form__label">
+                                                    Danh mục
+                                                </label>
+                                                <select id="selectCity"
+                                                    class="form-select account-form__input js-example-basic-single"
+                                                    aria-label="Default select example">
+                                                    <option selected>Chọn danh mục</option>
+                                                    <option value="1">2</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="account-form__group">
+                                                <label for="selectCity" class="account-form__label">
+                                                    Thẻ
+                                                </label>
+                                                <select id="selectCity"
+                                                    class="form-select account-form__input js-example-basic-single"
+                                                    aria-label="Default select example">
+                                                    <option selected>Chọn thẻ</option>
+                                                    <option value="1">2</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="filter-course__sort">
+                                                <div class="filter-course__term">
+                                                    <div class="filter-course__detail special">
+                                                        <span class="filter-course__name">
+                                                            Unity-Hub
+                                                        </span>
+                                                        <span class="filter-course__icon">
+                                                            <svg id="Layer_2" data-name="Layer 2"
+                                                                xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" viewBox="0 0 20 20">
+                                                                <g id="close-circle">
+                                                                    <rect id="Rectangle_5599" data-name="Rectangle 5599"
+                                                                        width="20" height="20" fill="#9f9f9f"
+                                                                        opacity="0" />
+                                                                    <path id="Path_7360" data-name="Path 7360"
+                                                                        d="M10.333,2a8.333,8.333,0,1,0,8.333,8.333A8.333,8.333,0,0,0,10.333,2Zm2.258,9.408a.837.837,0,1,1-1.183,1.183l-1.075-1.083L9.258,12.592a.837.837,0,1,1-1.183-1.183l1.083-1.075L8.075,9.258A.837.837,0,0,1,9.258,8.075l1.075,1.083,1.075-1.083a.837.837,0,0,1,1.183,1.183l-1.083,1.075Z"
+                                                                        transform="translate(-0.333 -0.333)"
+                                                                        fill="#9f9f9f" />
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="filter-course__term">
+                                                    <div class="filter-course__detail special">
+                                                        <span class="filter-course__name">
+                                                            Unity-Hub Unity-Hub
+                                                        </span>
+                                                        <span class="filter-course__icon">
+                                                            <svg id="Layer_2" data-name="Layer 2"
+                                                                xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" viewBox="0 0 20 20">
+                                                                <g id="close-circle">
+                                                                    <rect id="Rectangle_5599" data-name="Rectangle 5599"
+                                                                        width="20" height="20" fill="#9f9f9f"
+                                                                        opacity="0" />
+                                                                    <path id="Path_7360" data-name="Path 7360"
+                                                                        d="M10.333,2a8.333,8.333,0,1,0,8.333,8.333A8.333,8.333,0,0,0,10.333,2Zm2.258,9.408a.837.837,0,1,1-1.183,1.183l-1.075-1.083L9.258,12.592a.837.837,0,1,1-1.183-1.183l1.083-1.075L8.075,9.258A.837.837,0,0,1,9.258,8.075l1.075,1.083,1.075-1.083a.837.837,0,0,1,1.183,1.183l-1.083,1.075Z"
+                                                                        transform="translate(-0.333 -0.333)"
+                                                                        fill="#9f9f9f" />
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="gap-20"></div>
+
+                                            <label class="account-form__label">
                                                 Ảnh đại diện
-                                            </p>
+                                            </label>
 
                                             <!-- add active -->
                                             <label for="file2" class="account-teacher__show">
@@ -1479,9 +1553,9 @@
 
                                             <div class="gap-20 special"></div>
 
-                                            <p class="group-cmt__title">
+                                            <label class="account-form__label">
                                                 Tài liệu
-                                            </p>
+                                            </label>
 
                                             <div class="monitor-info__list special">
                                                 <!-- item -->
@@ -1570,7 +1644,8 @@
                                             </div>
 
                                             <div class="group-cmt__upload">
-                                                <label for="upload" class="group-cmt__button special">
+                                                <div class="group-cmt__button special" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal-2">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="33.435"
                                                         height="30.063" viewBox="0 0 33.435 30.063">
                                                         <g id="cloud-upload" transform="translate(-3.323 -4.937)">
@@ -1586,11 +1661,14 @@
                                                     </svg>
 
                                                     <span>Chọn file</span>
-                                                </label>
-                                                <input type="file" name="upload" id="upload" class="group-cmt__choose">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <button type="button" class="account-form__btn edit">
+                                        Đăng bài
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -2400,6 +2478,495 @@
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Chọn file -->
+    <div class="modal fade course-modal" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form class="account-form">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="account-form__header">
+                            <h3 class="user-content__title">Chọn file</h3>
+                        </div>
+
+                        <div class="course-modal__form intro-tabs__form">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Loại</option>
+                                <option value="1">File ảnh</option>
+                                <option value="2">File tài liệu</option>
+                            </select>
+
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Lĩnh vực</option>
+                                <option value="1">File ảnh</option>
+                                <option value="2">File tài liệu</option>
+                            </select>
+
+                            <input class="intro-tabs__input" type="search" placeholder="Nhập từ khóa tìm kiếm..." />
+
+                            <button class="intro-tabs__submit" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18.006" height="18.006" opacity="0.5"
+                                    viewBox="0 0 18.006 18.006">
+                                    <path id="Path_28" data-name="Path 28"
+                                        d="M20.71,19.29l-3.4-3.39A7.92,7.92,0,0,0,19,11a8,8,0,1,0-8,8,7.92,7.92,0,0,0,4.9-1.69l3.39,3.4a1,1,0,1,0,1.42-1.42ZM5,11a6,6,0,1,1,6,6,6,6,0,0,1-6-6Z"
+                                        transform="translate(-3 -3)" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Add class active nếu list không có item -->
+                        <div class="course-modal__data">
+                            <div class="account-form__list">
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+
+                                <span class="table-info monitor-info__student">
+                                    <div class="header-social__avatar course-modal__img">
+                                        <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="header-social__service monitor-info__text">
+                                        <span class="header-social__name">
+                                            <h4>Hồ Trung Dũng Hồ Trung Dũng </h4>
+                                        </span>
+                                        <p class="header-social__desc">
+                                            Giám đốc IQS Center
+                                        </p>
+                                    </div>
+
+                                    <div class="account-care__option">
+                                        <input type="checkbox" id="teacher-1p" class="account-care__input">
+                                        <label for="teacher-1p" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737">
+                                                </path>
+                                            </svg>
+                                        </label>
+                                    </div>
+                                </span>
+                            </div>
+
+                            <button type="button" class="account-form__btn edit">
+                                Chọn
+                            </button>
+
+                            <p class="course-modal__text">
+                                Không có dữ liệu
+                            </p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

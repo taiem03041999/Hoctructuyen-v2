@@ -308,6 +308,17 @@
             border-radius: 20px;
             padding: 5px 8px 5px 20px;
             background-color: $color-desc;
+
+            &.special {
+                border-radius: 5px;
+                background-color: rgba($color: #1795a8, $alpha: 0.1);
+
+                .filter-course__name {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: $color-main;
+                }
+            }
         }
 
         &__icon {
