@@ -101,6 +101,14 @@ body {
 .gap {
     &-20 {
         height: 20px;
+
+        &.special {
+            height: 28px;
+
+            @include responsive_fit {
+                height: 20px;
+            }
+        }
     }
 }
 

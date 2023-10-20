@@ -807,7 +807,7 @@
 
             margin: 8px auto 0;
             font-weight: 500;
-            color: #707070;
+            color: rgba($color: $color-desc, $alpha: 0.25);
         }
 
         &__equal {

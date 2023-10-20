@@ -1079,9 +1079,20 @@
             min-width: 210px;
             margin-left: 40px;
 
+            @include responsive_fit {
+                margin: 25px 0 0 0;
+            }
+
             @include responsive_mobile {
                 min-width: 100%;
-                margin: 25px 0 0 0;
+            }
+
+            &.special {
+                min-width: 270px;
+
+                @include responsive_mobile {
+                    min-width: 100%;
+                }
             }
         }
 
@@ -1101,6 +1112,14 @@
                 color: rgba($color: $color-desc, $alpha: 0.25);
                 margin-left: 10px;
             }
+
+            &.special {
+                max-width: 80%;
+
+                @include responsive_HD {
+                    max-width: 100%;
+                }
+            }
         }
 
         &__choose {
@@ -1108,6 +1127,20 @@
             visibility: hidden;
             width: 0px;
             height: 0px;
+        }
+
+        &__reply {
+            padding-left: 70px;
+            margin-top: 20px;
+            @include flexBox(bottom);
+        }
+
+        &__replySub {
+            cursor: pointer;
+
+            & + & {
+                margin-left: 15px;
+            }
         }
     }
 }
