@@ -900,6 +900,14 @@
                 }
             }
         }
+
+        &__start {
+            @include flexBox(top);
+
+            @include responsive_mobile {
+                flex-direction: column;
+            }
+        }
     }
 
     &-detail {
@@ -935,7 +943,7 @@
         }
 
         &__item {
-            @include flexBox(top);
+            position: relative;
 
             & + & {
                 margin-top: 30px;
@@ -957,6 +965,31 @@
                         display: none;
                     }
                 }
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 160px;
+                left: 37px;
+
+                width: 1px;
+                height: calc(100% - 140px);
+                background-color: rgba($color: $color-desc, $alpha: 0.15);
+            }
+        }
+
+        &__main,
+        &__child {
+            @include flexBox(top);
+        }
+
+        &__child {
+            margin-top: 25px;
+            padding: 0 25px 0 80px;
+
+            @include responsive_fit {
+                padding: 0 0px 0 50px;
             }
         }
 
@@ -980,17 +1013,6 @@
 
             @include responsive_mobile {
                 padding: 18px 20px 25px;
-            }
-
-            &:after {
-                content: "";
-                position: absolute;
-                top: 160px;
-                left: -23px;
-
-                width: 1px;
-                height: calc(100% - 140px);
-                background-color: rgba($color: $color-desc, $alpha: 0.15);
             }
         }
 
@@ -1035,7 +1057,7 @@
             }
 
             @include responsive_mobile {
-                @include gridBox(2, 10px, 10px);
+                @include gridBox(1, 10px, 10px);
             }
 
             img {
@@ -1045,6 +1067,47 @@
 
         &__text + &__img {
             margin-top: 20px;
+        }
+
+        &__title {
+            font-size: 14px;
+            color: rgba($color: $color-desc, $alpha: 0.5);
+            margin-bottom: 12px;
+        }
+
+        &__file {
+            min-width: 210px;
+            margin-left: 40px;
+
+            @include responsive_mobile {
+                min-width: 100%;
+                margin: 25px 0 0 0;
+            }
+        }
+
+        &__upload {
+            margin-top: 20px;
+        }
+
+        &__button {
+            padding: 10px 15px;
+            @include flexBox(both);
+            border-radius: 10px;
+            border: 1px dashed rgba(112, 112, 112, 0.5);
+            cursor: pointer;
+
+            & > span {
+                font-size: 14px;
+                color: rgba($color: $color-desc, $alpha: 0.25);
+                margin-left: 10px;
+            }
+        }
+
+        &__choose {
+            position: absolute;
+            visibility: hidden;
+            width: 0px;
+            height: 0px;
         }
     }
 }
