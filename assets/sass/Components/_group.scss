@@ -908,14 +908,19 @@
                 flex-direction: column;
             }
         }
+
+        &__sides {
+            @include flexBox(bothSides);
+
+            @include responsive_mobile {
+                flex-direction: column;
+            }
+        }
     }
 
     &-detail {
-        &__text {
-            margin-bottom: 22px;
-            font-size: 14px;
-            color: $color-desc;
-            @include lineDot(5);
+        &__text * {
+            all: revert;
         }
 
         &__img {
@@ -1044,9 +1049,8 @@
             font-style: italic;
         }
 
-        &__text {
-            font-size: 14px;
-            color: $color-desc;
+        &__text * {
+            all: revert;
         }
 
         &__img {
@@ -1142,6 +1146,35 @@
             & + & {
                 margin-left: 15px;
             }
+        }
+
+        &__btn {
+            border: 0;
+            background-color: transparent;
+            margin-left: 20px;
+
+            @include responsive_mobile {
+                margin: 20px auto 0;
+                @include flexBox(both);
+            }
+
+            & > span {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 500;
+                margin-left: 5px;
+                color: $color-red;
+            }
+        }
+
+        &__stt {
+            font-weight: 500;
+            color: $color-main;
+            padding: 0 20px 0 10px;
+        }
+
+        &__del {
+            margin-left: 20px;
         }
     }
 }

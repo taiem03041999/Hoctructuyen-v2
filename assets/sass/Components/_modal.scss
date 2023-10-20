@@ -1,0 +1,131 @@
+.modal {
+    background-color: rgba($color: #fff, $alpha: 0.3);
+    backdrop-filter: blur(4px);
+
+    &-book {
+        &__content {
+            border-radius: 20px;
+        }
+
+        &__content {
+            padding: 35px;
+        }
+
+        &__close {
+            position: absolute;
+            right: -40px;
+            top: 0;
+            border: 0;
+            background-color: transparent;
+        }
+
+        &__header {
+            @include flexBox(bothSides);
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__step {
+            @include flexBox(hor);
+        }
+
+        &__stepSub {
+            @include flexBox(both);
+            width: 40px;
+            height: 40px;
+
+            color: #9f9f9f;
+            font-weight: 500;
+            border-radius: 50%;
+            border: 2px solid #9f9f9f;
+            position: relative;
+
+            &.active {
+                background-color: $color-main;
+                color: #fff;
+                border-color: $color-main;
+            }
+
+            &:first-child {
+                color: $color-main;
+                border-color: $color-main;
+                background-color: transparent;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -37px;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    width: 25px;
+                    height: 2px;
+                    border-radius: 2px;
+                    background-color: $color-main;
+                }
+            }
+
+            & + & {
+                margin-left: 45px;
+            }
+        }
+
+        &__cmt {
+            @include flexBox(top);
+            margin: 24px 0;
+        }
+
+        &__avt {
+            min-width: 50px;
+            height: 50px;
+            @include imgPT(0%);
+            margin-right: 15px;
+            border-radius: 50%;
+        }
+
+        &__text {
+            border: 1px solid $color-yellow;
+            padding: 20px;
+            border-radius: 0 20px 20px 20px;
+            background-color: rgba($color: $color-yellow, $alpha: 0.1);
+            font-size: 14px;
+            color: $color-yellow;
+        }
+
+        &__btn {
+            border: 0;
+            background-color: $color-main;
+            padding: 10px 15px;
+            border-radius: 30px;
+            width: 100%;
+
+            & > span {
+                font-size: 15px;
+                text-transform: uppercase;
+                color: #fff;
+                margin-right: 15px;
+                font-weight: 500;
+            }
+        }
+
+        &__item {
+            & + & {
+                margin-top: 30px;
+            }
+        }
+
+        &__question {
+            font-weight: bold;
+            color: $color-desc;
+            margin-bottom: 8px;
+        }
+
+        &__sub {
+            color: $color-desc;
+            margin-bottom: 15px;
+        }
+    }
+}

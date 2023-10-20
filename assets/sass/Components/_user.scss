@@ -593,6 +593,18 @@
                         z-index: 2;
                     }
 
+                    &.special {
+                        min-height: 160px;
+                    }
+
+                    &.special2 {
+                        min-height: 235px;
+
+                        @include responsive_mobile {
+                            min-height: 160px;
+                        }
+                    }
+
                     .account-teacher {
                         &__text {
                             color: #fff;
@@ -611,20 +623,6 @@
                     font-size: 13px;
                     color: rgba($color: $color-desc, $alpha: 0.5);
                 }
-
-                // &__update.avatar {
-                //     margin-top: 32px;
-
-                //     .account-teacher {
-                //         &__example,
-                //         &__image {
-                //             height: 130px;
-                //             width: 130px;
-                //             margin: 0 auto;
-                //             border-radius: 50%;
-                //         }
-                //     }
-                // }
             }
 
             &.avatar {
@@ -646,6 +644,14 @@
 
                 .account-teacher__show {
                     padding-bottom: 5px !important;
+                }
+            }
+
+            &.special2 {
+                max-width: 70%;
+
+                @include responsive_fit {
+                    max-width: 100%;
                 }
             }
 
