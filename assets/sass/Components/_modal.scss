@@ -4,11 +4,12 @@
 
     &-book {
         &__content {
-            border-radius: 20px;
-        }
-
-        &__content {
             padding: 35px;
+            border-radius: 20px;
+
+            @include responsive_mobile {
+                padding: 40px 15px 20px;
+            }
         }
 
         &__close {
@@ -17,6 +18,11 @@
             top: 0;
             border: 0;
             background-color: transparent;
+
+            @include responsive_mobile {
+                top: 10px;
+                right: 15px;
+            }
         }
 
         &__header {
@@ -95,10 +101,33 @@
             color: $color-yellow;
         }
 
+        &__btnWrap {
+            @include flexBox(hor);
+
+            button {
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__btnSub {
+            border: 0;
+            background-color: #000;
+            padding: 0 15px;
+
+            height: 45px;
+            border-radius: 30px 0 0 30px;
+            min-width: 100px;
+            margin-right: -25px;
+        }
+
         &__btn {
             border: 0;
             background-color: $color-main;
-            padding: 10px 15px;
+            padding: 0 15px;
+
+            height: 45px;
             border-radius: 30px;
             width: 100%;
 
@@ -108,6 +137,14 @@
                 color: #fff;
                 margin-right: 15px;
                 font-weight: 500;
+            }
+        }
+
+        &__list {
+            margin-bottom: 40px;
+
+            @include responsive_big16 {
+                margin-bottom: 30px;
             }
         }
 

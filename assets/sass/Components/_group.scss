@@ -1099,6 +1099,15 @@
                     min-width: 100%;
                 }
             }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            img + img {
+                margin-top: 10px;
+            }
         }
 
         &__upload {
