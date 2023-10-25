@@ -165,4 +165,130 @@
             margin-bottom: 15px;
         }
     }
+
+    &-chat {
+        &__body {
+            height: 750px;
+            @include flexBox(bothSides);
+            flex-direction: column;
+
+            @include responsive_big16 {
+                height: 600px;
+            }
+        }
+
+        &__list {
+            max-height: 100%;
+            overflow-x: auto;
+            padding-right: 10px;
+
+            &::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 2px grey;
+                border-radius: 10px;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: $color-main;
+                border-radius: 7px;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: $color-main;
+            }
+        }
+
+        &__item {
+            @include flexBox(top);
+
+            & + & {
+                margin-top: 20px;
+            }
+
+            &.special {
+                flex-direction: row-reverse;
+
+                .modal-chat {
+                    &__content {
+                        margin: 0 15px 0 0;
+                    }
+
+                    &__text {
+                        background-color: $color-main;
+                        border-color: $color-main;
+                        border-radius: 20px 0 20px 20px;
+                        color: #fff;
+
+                        @include responsive_mobile {
+                            border-radius: 10px 0 10px 10px;
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__avt {
+            min-width: 50px;
+            height: 50px;
+            @include imgPT(0%);
+            border-radius: 50%;
+        }
+
+        &__content {
+            margin-left: 15px;
+        }
+
+        &__text {
+            background-color: rgba($color: #eff3f7, $alpha: 0.5);
+            border: 1px solid rgba($color: $color-desc, $alpha: 0.1);
+            border-radius: 0 20px 20px 20px;
+            padding: 20px 25px;
+
+            @include responsive_mobile {
+                border-radius: 0 10px 10px 10px;
+                padding: 10px 15px;
+            }
+        }
+
+        &__time {
+            margin: 10px 0 0 25px;
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        &__time,
+        &__text {
+            color: $color-desc;
+        }
+
+        &__form {
+            width: 100%;
+            @include flexBox(bothSides);
+            padding-top: 15px;
+            border-top: 1px solid rgba($color: $color-desc, $alpha: 0.1);
+        }
+
+        &__input {
+            width: 100%;
+            border: 0;
+            background-color: transparent;
+            padding: 0 15px;
+
+            &::placeholder {
+                color: #d6d6d6;
+            }
+        }
+
+        &__btn {
+            border: 0;
+            background-color: transparent;
+        }
+    }
 }

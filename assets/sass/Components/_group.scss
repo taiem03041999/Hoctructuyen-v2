@@ -907,6 +907,12 @@
             @include responsive_mobile {
                 flex-direction: column;
             }
+
+            &.special {
+                @include responsive_bothTM {
+                    flex-direction: column;
+                }
+            }
         }
 
         &__sides {

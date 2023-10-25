@@ -392,7 +392,7 @@
                                             Đặt lịch ngay
                                         </button>
 
-                                        <button type="button" data-bs-toggle="modal" data-bs-target="#bookModal2">
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#chatModal">
                                             Chat trực tiếp
                                         </button>
                                     </div>
@@ -486,7 +486,7 @@
                                     </li>
                                 </ul>
 
-                                <div class="group-flex__start">
+                                <div class="group-flex__start special">
                                     <div class="profile-teacher__content">
                                         <p>This is the User Profile UI Design Web App Screen. The User's profile page is
                                             composed of various components, including Profile Picture, Avatar, Name of
@@ -1125,7 +1125,7 @@
                         </div>
                     </div>
 
-                    <button class="modal-book__btn">
+                    <button class="modal-book__btn" data-bs-toggle="modal" data-bs-target="#bookModal2">
                         <span>Tiếp tục</span>
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14.001" viewBox="0 0 16 14.001">
@@ -1237,6 +1237,136 @@
         </div>
     </div>
 
+    <!-- Modal chat-->
+    <div class="modal fade modal-book modal-chat" id="chatModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-book__content">
+                <div class="modal-book__header">
+                    <h3 class="modal-book__title" id="staticBackdropLabel">
+                        Tư vấn trực tiếp
+                    </h3>
+
+                    <button type="button" class="modal-book__close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17.016" height="17.014"
+                            viewBox="0 0 17.016 17.014">
+                            <path id="Path_7250" data-name="Path 7250"
+                                d="M16.5,14.5l6.092-6.078A1.422,1.422,0,1,0,20.58,6.413L14.5,12.5,8.425,6.413A1.422,1.422,0,0,0,6.413,8.424L12.5,14.5,6.413,20.579a1.422,1.422,0,1,0,2.012,2.012L14.5,16.5l6.078,6.092a1.422,1.422,0,1,0,2.012-2.012Z"
+                                transform="translate(-5.994 -5.996)" fill="#18191b" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="modal-chat__body">
+                    <div class="modal-chat__list">
+                        <div class="modal-chat__item">
+                            <div class="modal-chat__avt">
+                                <img src="./assets/images/Content/Le-kien-chung.png" alt="" />
+                            </div>
+
+                            <div class="modal-chat__content">
+                                <div class="modal-chat__text">
+                                    Why was the web developer always cold?
+                                    Because he left his Windows open!
+                                </div>
+
+                                <p class="modal-chat__time">
+                                    02:44 - 05/10/2023
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- add special -->
+                        <div class="modal-chat__item special">
+                            <div class="modal-chat__avt">
+                                <img src="./assets/images/Content/Le-kien-chung.png" alt="" />
+                            </div>
+
+                            <div class="modal-chat__content">
+                                <div class="modal-chat__text">
+                                    Why was the web developer always cold?
+                                    Because he left his Windows open!
+                                </div>
+
+                                <p class="modal-chat__time">
+                                    02:44 - 05/10/2023
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal-chat__item">
+                            <div class="modal-chat__avt">
+                                <img src="./assets/images/Content/Le-kien-chung.png" alt="" />
+                            </div>
+
+                            <div class="modal-chat__content">
+                                <div class="modal-chat__text">
+                                    Why was the web developer always cold?
+                                    Because he left his Windows open!
+                                </div>
+
+                                <p class="modal-chat__time">
+                                    02:44 - 05/10/2023
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal-chat__item">
+                            <div class="modal-chat__avt">
+                                <img src="./assets/images/Content/Le-kien-chung.png" alt="" />
+                            </div>
+
+                            <div class="modal-chat__content">
+                                <div class="modal-chat__text">
+                                    Why was the web developer always cold?
+                                    Because he left his Windows open!
+                                </div>
+
+                                <p class="modal-chat__time">
+                                    02:44 - 05/10/2023
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="modal-chat__item">
+                            <div class="modal-chat__avt">
+                                <img src="./assets/images/Content/Le-kien-chung.png" alt="" />
+                            </div>
+
+                            <div class="modal-chat__content">
+                                <div class="modal-chat__text">
+                                    Why was the web developer always cold?
+                                    Because he left his Windows open!
+                                </div>
+
+                                <p class="modal-chat__time">
+                                    02:44 - 05/10/2023
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="modal-chat__form">
+                        <input type="text" class="modal-chat__input" placeholder="Nhập tin nhắn...">
+
+                        <button title="submit" class="modal-chat__btn">
+                            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24">
+                                <g id="navigation-2">
+                                    <rect id="Rectangle_5601" data-name="Rectangle 5601" width="24" height="24"
+                                        fill="#1795a8" opacity="0" />
+                                    <path id="Path_7362" data-name="Path 7362"
+                                        d="M13.67,22h-.06a1,1,0,0,1-.92-.8l-1.54-7.57a1,1,0,0,0-.78-.78L2.8,11.31a1,1,0,0,1-.12-1.93l16-5.33A1,1,0,0,1,20,5.32l-5.33,16A1,1,0,0,1,13.67,22Z"
+                                        fill="#1795a8" />
+                                </g>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Jquery JS -->
     <script type="text/javascript" src="./assets/js/Library/jquery.min.js"></script>
     <!-- Script Bootstrap -->
@@ -1305,6 +1435,7 @@
         }
     </script>
 
+    <!-- See more cmt -->
     <script>
         function profileFunction() {
             var dots = document.getElementById("comment-dots");

@@ -836,7 +836,7 @@
             border-radius: 10px;
             margin-left: 30px;
 
-            @include responsive_mobile {
+            @include responsive_bothTM {
                 min-width: 100%;
                 height: auto;
                 padding-top: 68%;

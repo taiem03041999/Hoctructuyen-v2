@@ -5299,14 +5299,14 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover; }
-  @media only screen and (max-width: 46.1875em) {
+  @media only screen and (max-width: 63.9375em) {
     .profile-teacher__img {
       min-width: 100%;
       height: auto;
       padding-top: 68%;
       margin: 20px 0 0 0; }
-      .profile-teacher__img .hide-on-mobile {
-        display: none; } }
+      .profile-teacher__img .hide-on-bothTM {
+        display: none !important; } }
 
 .course #caurse-more,
 .course #comment-more {
@@ -11481,6 +11481,11 @@ i + i {
       flex-direction: column; }
       .group-flex__start .hide-on-mobile {
         display: none; } }
+  @media only screen and (max-width: 63.9375em) {
+    .group-flex__start.special {
+      flex-direction: column; }
+      .group-flex__start.special .hide-on-bothTM {
+        display: none !important; } }
 
 .group-flex__sides {
   display: -webkit-flex;
@@ -11882,3 +11887,105 @@ i + i {
   .modal-book__sub {
     color: #4e6579;
     margin-bottom: 15px; }
+  .modal-chat__body {
+    height: 750px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+    @media only screen and (max-width: 1600px) {
+      .modal-chat__body {
+        height: 600px; } }
+  .modal-chat__list {
+    max-height: 100%;
+    overflow-x: auto;
+    padding-right: 10px;
+    /* Track */
+    /* Handle */
+    /* Handle on hover */ }
+    .modal-chat__list::-webkit-scrollbar {
+      width: 10px; }
+    .modal-chat__list::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 2px grey;
+      border-radius: 10px; }
+    .modal-chat__list::-webkit-scrollbar-thumb {
+      background: #24adc1;
+      border-radius: 7px; }
+    .modal-chat__list::-webkit-scrollbar-thumb:hover {
+      background: #24adc1; }
+  .modal-chat__item {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: flex-start; }
+    .modal-chat__item + .modal-chat__item {
+      margin-top: 20px; }
+    .modal-chat__item.special {
+      flex-direction: row-reverse; }
+      .modal-chat__item.special .modal-chat__content {
+        margin: 0 15px 0 0; }
+      .modal-chat__item.special .modal-chat__text {
+        background-color: #24adc1;
+        border-color: #24adc1;
+        border-radius: 20px 0 20px 20px;
+        color: #fff; }
+        @media only screen and (max-width: 46.1875em) {
+          .modal-chat__item.special .modal-chat__text {
+            border-radius: 10px 0 10px 10px;
+            padding: 10px 15px; }
+            .modal-chat__item.special .modal-chat__text .hide-on-mobile {
+              display: none; } }
+  .modal-chat__avt {
+    min-width: 50px;
+    height: 50px;
+    position: relative;
+    padding-top: 0%;
+    overflow: hidden;
+    border-radius: 50%; }
+    .modal-chat__avt > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .modal-chat__content {
+    margin-left: 15px; }
+  .modal-chat__text {
+    background-color: rgba(239, 243, 247, 0.5);
+    border: 1px solid rgba(78, 101, 121, 0.1);
+    border-radius: 0 20px 20px 20px;
+    padding: 20px 25px; }
+    @media only screen and (max-width: 46.1875em) {
+      .modal-chat__text {
+        border-radius: 0 10px 10px 10px;
+        padding: 10px 15px; }
+        .modal-chat__text .hide-on-mobile {
+          display: none; } }
+  .modal-chat__time {
+    margin: 10px 0 0 25px;
+    font-size: 13px;
+    font-weight: 300; }
+  .modal-chat__time, .modal-chat__text {
+    color: #4e6579; }
+  .modal-chat__form {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(78, 101, 121, 0.1); }
+  .modal-chat__input {
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    padding: 0 15px; }
+    .modal-chat__input::placeholder {
+      color: #d6d6d6; }
+  .modal-chat__btn {
+    border: 0;
+    background-color: transparent; }
