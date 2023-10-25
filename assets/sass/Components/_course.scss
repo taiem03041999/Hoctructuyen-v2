@@ -287,7 +287,7 @@
                         left: 0;
                         top: -2px;
                         min-width: 25px;
-                        height: 100%;
+                        height: 63px;
                         @include flexBox(both);
 
                         @include responsive_mobile {
@@ -297,6 +297,8 @@
 
                     &__cover {
                         @include flexBox(bothSides);
+                        align-items: flex-start;
+
                         color: $color-desc;
                         font-size: 14px;
                         margin-left: 32px;
@@ -306,9 +308,6 @@
                         @include responsive_mobile {
                             padding: 10px 0;
                         }
-                    }
-
-                    &__name {
                     }
 
                     &__sub {
@@ -329,6 +328,16 @@
 
                         @include responsive_mobile {
                             padding-left: 15px;
+                        }
+                    }
+
+                    &__video {
+                        position: relative;
+                        margin: 10px 0 0;
+
+                        video {
+                            width: 100%;
+                            height: auto;
                         }
                     }
                 }
