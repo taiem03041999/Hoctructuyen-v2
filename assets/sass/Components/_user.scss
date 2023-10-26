@@ -301,6 +301,7 @@
         &__wrapper {
             overflow: hidden;
             background-color: #fff;
+            border-radius: 14px;
 
             padding: 28px 40px 40px;
             min-height: 250px;
@@ -427,6 +428,12 @@
                 @include responsive_bothTM {
                     padding: 0 24px 0;
                 }
+            }
+        }
+
+        &__heading {
+            &.special {
+                margin-bottom: 20px;
             }
         }
 

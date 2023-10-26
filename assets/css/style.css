@@ -6274,6 +6274,7 @@ body {
   .user-content__wrapper {
     overflow: hidden;
     background-color: #fff;
+    border-radius: 14px;
     padding: 28px 40px 40px;
     min-height: 250px; }
     @media only screen and (max-width: 1366px) {
@@ -6376,6 +6377,8 @@ body {
           padding: 0 24px 0; }
           .user-content__header.custom .hide-on-bothTM {
             display: none !important; } }
+  .user-content__heading.special {
+    margin-bottom: 20px; }
   .user-content__title {
     font-size: 22px; }
     @media only screen and (max-width: 46.1875em) {
@@ -11904,6 +11907,7 @@ i + i {
       .modal-chat__body {
         height: 600px; } }
   .modal-chat__list {
+    width: 100%;
     max-height: 100%;
     overflow-x: auto;
     padding: 0 10px 20px 0;
