@@ -12168,3 +12168,11 @@ i + i {
       padding: 0; }
       .chat-detail .hide-on-mobile {
         display: none; } }
+
+.chat-mobile {
+  display: none; }
+  @media only screen and (max-width: 46.1875em) {
+    .chat-mobile {
+      display: block; }
+      .chat-mobile .hide-on-mobile {
+        display: none; } }

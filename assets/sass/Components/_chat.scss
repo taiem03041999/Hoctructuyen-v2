@@ -173,4 +173,12 @@
             padding: 0;
         }
     }
+
+    &-mobile {
+        display: none;
+
+        @include responsive_mobile {
+            display: block;
+        }
+    }
 }
