@@ -339,8 +339,8 @@
             position: absolute;
             right: 0;
             margin-right: 27px;
-            top: 50%;
-            transform: translateY(-50%);
+            // top: 50%;
+            // transform: translateY(-50%);
             @include flexBox(hor);
 
             @include responsive_mobile {

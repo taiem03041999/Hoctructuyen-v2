@@ -855,6 +855,15 @@
                 padding: 5px 32px;
                 border: 1.4px solid;
             }
+
+            &.special {
+                border-bottom: 0;
+                max-width: 80%;
+
+                @include responsive_mobile {
+                    max-width: 100%;
+                }
+            }
         }
 
         &__success {

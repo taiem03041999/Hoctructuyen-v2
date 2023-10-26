@@ -449,6 +449,11 @@
 
             &.textarea {
                 min-height: 153px;
+
+                &.special {
+                    min-height: 300px;
+                    margin-bottom: 30px;
+                }
             }
         }
 

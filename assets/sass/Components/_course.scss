@@ -662,6 +662,10 @@
 
             &-dialog {
                 max-width: fit-content !important;
+
+                @include responsive_mobile {
+                    max-width: 100% !important;
+                }
             }
 
             &-dialog {

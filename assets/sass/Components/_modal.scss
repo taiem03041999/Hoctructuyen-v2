@@ -6,6 +6,7 @@
         &__content {
             padding: 35px;
             border-radius: 20px;
+            background-color: #fff !important;
 
             @include responsive_mobile {
                 padding: 40px 15px 20px;
@@ -145,6 +146,16 @@
 
             @include responsive_big16 {
                 margin-bottom: 30px;
+            }
+
+            &.special {
+                margin-bottom: 0;
+                max-height: 400px;
+                overflow-x: auto;
+
+                @include responsive_HD {
+                    max-height: max-content;
+                }
             }
         }
 
