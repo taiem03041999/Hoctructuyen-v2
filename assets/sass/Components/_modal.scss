@@ -182,6 +182,22 @@
             overflow-x: auto;
             padding: 0 10px 20px 0;
 
+            &.special {
+                position: absolute;
+                left: 20px;
+                bottom: 0;
+
+                padding: 0 10px 20px;
+                margin-bottom: 64px;
+                width: calc(100% - 40px);
+                max-height: calc(100% - 64px);
+
+                @include responsive_mobile {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+
             &::-webkit-scrollbar {
                 width: 10px;
             }
@@ -255,6 +271,10 @@
                 border-radius: 0 10px 10px 10px;
                 padding: 10px 15px;
             }
+
+            &.special {
+                background-color: #fff;
+            }
         }
 
         &__time {
@@ -273,6 +293,23 @@
             @include flexBox(bothSides);
             padding-top: 15px;
             border-top: 1px solid rgba($color: $color-desc, $alpha: 0.1);
+
+            &.special {
+                padding: 20px;
+                border-radius: 10px 10px 0 0;
+                background-color: #fff;
+                border-top: 0;
+
+                position: absolute;
+                bottom: 0;
+                left: 20px;
+                width: calc(100% - 40px);
+
+                @include responsive_mobile {
+                    width: 100%;
+                    left: 0;
+                }
+            }
         }
 
         &__input {

@@ -293,8 +293,6 @@
 
     &-content {
         margin-left: 18px;
-        border-radius: 14px;
-        overflow: hidden;
 
         @include responsive_bigLow {
             margin-left: 0;
