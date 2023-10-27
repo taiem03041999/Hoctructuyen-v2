@@ -11904,7 +11904,8 @@ i + i {
     .modal-book__list.special {
       margin-bottom: 0;
       max-height: 400px;
-      overflow-x: auto; }
+      overflow-x: auto;
+      width: 100%; }
       @media only screen and (max-width: 1283px) {
         .modal-book__list.special {
           max-height: max-content; }
