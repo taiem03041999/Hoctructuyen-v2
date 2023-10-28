@@ -746,6 +746,10 @@
                     }
                 }
             }
+
+            .monitor-info__student + .monitor-info__student {
+                padding-top: 0;
+            }
         }
 
         &__text {

@@ -5916,6 +5916,8 @@ body {
     display: block; }
   .course-modal__data.active .account-form__btn, .course-modal__data.active .account-form__list {
     display: none; }
+  .course-modal__data .monitor-info__student + .monitor-info__student {
+    padding-top: 0; }
 
 .course-modal__text {
   display: none;
@@ -8581,7 +8583,7 @@ body {
 
 .teacher-new__sidebar {
   padding-left: 40px;
-  min-width: 320px;
+  min-width: 295px;
   padding-left: 40px; }
   @media only screen and (max-width: 46.1875em) {
     .teacher-new__sidebar {
