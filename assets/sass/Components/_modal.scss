@@ -196,13 +196,13 @@
       padding: 0 10px 20px 0;
 
       &.special {
-        position: absolute;
-        left: 20px;
+        position: relative;
+        left: 0;
         bottom: 0;
 
         padding: 0 10px 20px;
         margin-bottom: 64px;
-        width: calc(100% - 40px);
+        width: calc(100% - 10px);
         max-height: calc(100% - 64px);
 
         @include responsive_mobile {

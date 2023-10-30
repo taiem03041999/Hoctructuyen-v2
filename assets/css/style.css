@@ -1372,6 +1372,10 @@ body {
       color: rgba(78, 101, 121, 0.5); }
       .account-form__label > sup {
         color: red; }
+      .account-form__label.special {
+        color: #18191b;
+        font-size: 16px;
+        font-weight: bold; }
     .account-form__category {
       font-weight: bold; }
     .account-form__icon {
@@ -8026,7 +8030,7 @@ body {
   .user-monitor__desc .account-teacher__example {
     flex-direction: row;
     min-height: 45px;
-    padding: 12px 15px;
+    padding: 7px 15px;
     background-color: transparent;
     width: 100%; }
   .user-monitor__desc .account-teacher__text {
@@ -11942,12 +11946,12 @@ i + i {
     /* Handle */
     /* Handle on hover */ }
     .modal-chat__list.special {
-      position: absolute;
-      left: 20px;
+      position: relative;
+      left: 0;
       bottom: 0;
       padding: 0 10px 20px;
       margin-bottom: 64px;
-      width: calc(100% - 40px);
+      width: calc(100% - 10px);
       max-height: calc(100% - 64px); }
       @media only screen and (max-width: 46.1875em) {
         .modal-chat__list.special {
@@ -12192,6 +12196,7 @@ i + i {
   padding: 0 20px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: center;
   height: 100%; }
   @media only screen and (max-width: 46.1875em) {
     .chat-detail {
@@ -12199,6 +12204,22 @@ i + i {
       padding: 0; }
       .chat-detail .hide-on-mobile {
         display: none; } }
+  .chat-detail.special {
+    width: 100%;
+    margin-top: -20px;
+    border-radius: 0;
+    height: 650px; }
+    .chat-detail.special .modal-chat__item {
+      margin-right: 52%; }
+      @media only screen and (max-width: 1440px) {
+        .chat-detail.special .modal-chat__item {
+          margin-right: 0; } }
+      .chat-detail.special .modal-chat__item.special {
+        margin-right: 0;
+        margin-left: 52%; }
+        @media only screen and (max-width: 1440px) {
+          .chat-detail.special .modal-chat__item.special {
+            margin-left: 0; } }
 
 .chat-mobile {
   display: none; }

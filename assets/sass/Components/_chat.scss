@@ -166,11 +166,38 @@
 
         background-repeat: no-repeat;
         background-size: cover;
+        background-position-y: center;
         height: 100%;
 
         @include responsive_mobile {
             width: 100%;
             padding: 0;
+        }
+
+        &.special {
+            width: 100%;
+            margin-top: -20px;
+            border-radius: 0;
+            height: 650px;
+
+            .modal-chat {
+                &__item {
+                    margin-right: 52%;
+
+                    @include responsive_fit {
+                        margin-right: 0;
+                    }
+
+                    &.special {
+                        margin-right: 0;
+                        margin-left: 52%;
+
+                        @include responsive_fit {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 
