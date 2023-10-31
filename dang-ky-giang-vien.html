@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <!-- Swiper Css -->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!-- Select Css -->
+    <link rel="stylesheet" href="./assets/css/select2.css" />
     <!-- Bootstrap Css -->
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
 
@@ -289,14 +291,14 @@
 
                         <ul class=" nav nav-pills account-form__pills">
                             <li class="nav-item">
-                                <a href="#" class="nav-link active">Học viên</a>
+                                <a href="#" class="nav-link">Học viên</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Giảng viên</a>
+                                <a href="#" class="nav-link active">Giảng viên</a>
                             </li>
                         </ul>
 
-                        <span class="account-form__category">
+                        <span class="account-care__category">
                             Thông tin tài khoản
                         </span>
 
@@ -315,14 +317,13 @@
                                     Số điện thoại đăng nhập <sup>*</sup>
                                 </label>
 
-                                <input type="text" class="form-control account-form__input" id="passNewInput"
-                                    placeholder="Số điện thoại" maxlength="10"
-                                    oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')">
-
-                                <!-- <div class="account-form__status">
-                                    <i class="fa-solid fa-circle-check account-form__icon input-success"></i>
-                                    <i class="fa-solid fa-circle-xmark account-form__icon input-error"></i>
-                                </div> -->
+                                <div class="account-form__phone">
+                                    <input type="text" class="form-control account-form__input" id="passNewInput"
+                                        value="+84" placeholder="" maxlength="10">
+                                    <input type="text" class="form-control account-form__input" id="passNewInput"
+                                        placeholder="Số điện thoại" maxlength="10"
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')">
+                                </div>
                             </div>
 
                             <div class="account-form__group">
@@ -349,12 +350,436 @@
                             </div>
                         </div>
 
-                        <div class="account-form__content">
-                            <div class="account-care__filed">
+                        <div class="tab-content account-form__content">
+                            <div class="account-teacher">
+                                <div class="account-teacher__group">
+                                    <div class="account-teacher__id">
+                                        <label for="" class="account-form__label">
+                                            CMND mặt trước <sup>*</sup>
+                                        </label>
+
+                                        <!-- Thêm class active để show ảnh -->
+                                        <label for="file1" class="account-teacher__show active">
+                                            <div class="account-teacher__example">
+                                                <input id="file1" type="file" class="account-teacher__file">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="33.435" height="30.063"
+                                                    viewBox="0 0 33.435 30.063">
+                                                    <g id="cloud-upload" transform="translate(-3.323 -4.937)">
+                                                        <path id="Path_6344" data-name="Path 6344"
+                                                            d="M15.886,11.481a1.667,1.667,0,0,0-2.333,0l-5,4.833a1.667,1.667,0,1,0,2.3,2.4L13.036,16.6V26a1.667,1.667,0,1,0,3.333,0V16.681l2.15,2.167a1.673,1.673,0,1,0,2.367-2.367Z"
+                                                            transform="translate(5.298 7.336)"
+                                                            fill="rgba(112,112,112,0.25)" />
+                                                        <path id="Path_6345" data-name="Path 6345"
+                                                            d="M28.121,9.692a10,10,0,0,0-18.9,0A8.333,8.333,0,0,0,4.088,23.475a1.667,1.667,0,1,0,2.5-2.117,5,5,0,0,1,3.75-8.333H10.5a1.667,1.667,0,0,0,1.667-1.333,6.667,6.667,0,0,1,13.067,0A1.667,1.667,0,0,0,26.9,13.025H27a5,5,0,0,1,3.75,8.333,1.671,1.671,0,1,0,2.5,2.217A8.333,8.333,0,0,0,28.121,9.692Z"
+                                                            transform="translate(1.329 1.975)"
+                                                            fill="rgba(112,112,112,0.25)" />
+                                                    </g>
+                                                </svg>
+
+                                                <div class="account-teacher__text">
+                                                    CMND hoặc CCCD mặt trước
+                                                </div>
+                                            </div>
+
+
+                                            <span class="account-teacher__image">
+                                                <img src="./assets/images/account/Decor.png" alt="">
+
+                                                <div class="account-form__remove btn-remove-image">
+                                                    <i class="fa-solid fa-trash text-danger "></i>
+                                                </div>
+                                            </span>
+                                        </label>
+                                    </div>
+
+                                    <div class="account-teacher__id">
+                                        <label for="" class="account-form__label">
+                                            CMND mặt sau <sup>*</sup>
+                                        </label>
+
+                                        <!-- Thêm class active để show ảnh -->
+                                        <label for="file2" class="account-teacher__show">
+                                            <div class="account-teacher__example">
+                                                <input id="file2" type="file" class="account-teacher__file">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="33.435" height="30.063"
+                                                    viewBox="0 0 33.435 30.063">
+                                                    <g id="cloud-upload" transform="translate(-3.323 -4.937)">
+                                                        <path id="Path_6344" data-name="Path 6344"
+                                                            d="M15.886,11.481a1.667,1.667,0,0,0-2.333,0l-5,4.833a1.667,1.667,0,1,0,2.3,2.4L13.036,16.6V26a1.667,1.667,0,1,0,3.333,0V16.681l2.15,2.167a1.673,1.673,0,1,0,2.367-2.367Z"
+                                                            transform="translate(5.298 7.336)"
+                                                            fill="rgba(112,112,112,0.25)" />
+                                                        <path id="Path_6345" data-name="Path 6345"
+                                                            d="M28.121,9.692a10,10,0,0,0-18.9,0A8.333,8.333,0,0,0,4.088,23.475a1.667,1.667,0,1,0,2.5-2.117,5,5,0,0,1,3.75-8.333H10.5a1.667,1.667,0,0,0,1.667-1.333,6.667,6.667,0,0,1,13.067,0A1.667,1.667,0,0,0,26.9,13.025H27a5,5,0,0,1,3.75,8.333,1.671,1.671,0,1,0,2.5,2.217A8.333,8.333,0,0,0,28.121,9.692Z"
+                                                            transform="translate(1.329 1.975)"
+                                                            fill="rgba(112,112,112,0.25)" />
+                                                    </g>
+                                                </svg>
+
+                                                <div class="account-teacher__text">
+                                                    CMND hoặc CCCD mặt sau
+                                                </div>
+                                            </div>
+                                            <span class="account-teacher__image">
+                                                <img src="./assets/images/account/Decor.png" alt="">
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="account-teacher__cover">
                                 <span class="account-care__category">
-                                    Lĩnh vực quan tâm
+                                    Địa chỉ
                                 </span>
 
+                                <div class="account-teacher__group">
+                                    <div class="account-form__group">
+                                        <label for="selectCity" class="account-form__label">
+                                            Thành phố <sup>*</sup>
+                                        </label>
+
+                                        <select id="selectCity"
+                                            class="form-select account-form__input js-example-basic-single"
+                                            aria-label="Default select example">
+                                            <option selected>Thành phố</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="account-form__group">
+                                        <label for="selectCity2" class="account-form__label">
+                                            Quận/huyện <sup>*</sup>
+                                        </label>
+
+                                        <select id="selectCity2"
+                                            class="form-select account-form__input js-example-basic-single"
+                                            aria-label="Default select example">
+                                            <option selected>Quận/huyện</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="account-form__group">
+                                    <label for="passNewInput" class="account-form__label">
+                                        Số nhà, Tòa nhà, Tên đường <sup>*</sup>
+                                    </label>
+
+                                    <input type="text" class="form-control account-form__input" id="passNewInput"
+                                        placeholder="Nhập địa chỉ" />
+                                </div>
+                            </div>
+
+                            <div class="account-teacher__cover">
+                                <span class="account-care__category">
+                                    Chứng chỉ đào tạo
+                                </span>
+
+                                <div class="account-form__group">
+                                    <label for="nameBrief" class="account-form__label">
+                                        Bí danh <sup>*</sup>
+                                    </label>
+
+                                    <input type="text" class="form-control account-form__input" id="nameBrief"
+                                        placeholder="VD: Giang Master" />
+                                </div>
+
+                                <div class="account-teacher__experience">
+                                    <div class="account-form__group">
+                                        <label for="selectCityas" class="account-form__label">
+                                            Kinh nghiệm <sup>*</sup>
+                                        </label>
+
+                                        <textarea type="text" class="form-control account-form__input" id="nameBrief"
+                                            placeholder="VD: 2 năm GV..."></textarea>
+                                    </div>
+
+                                    <div class="account-form__group">
+                                        <label for="yearTeacher" class="account-form__label">
+                                            Tổng năm kinh nghiệm <sup>*</sup>
+                                        </label>
+
+                                        <div class="account-teacher__special">
+                                            <input type="text" class="form-control account-form__input" id="yearTeacher"
+                                                placeholder="" />
+                                            <span class="account-teacher__icon">
+                                                Năm
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="account-form__group account-form__language">
+                                    <label for="" class="account-form__label">
+                                        Ngôn ngữ sử dụng <sup>*</sup>
+                                    </label>
+
+                                    <select id="" class="form-select account-form__input js-example-basic-single"
+                                        multiple aria-label="Default select example">
+                                        <option selected>Ngôn ngữ</option>
+                                        <option value="1">Tiếng việt</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+
+                                <!-- <button class="account-teacher__btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13.333" height="13.333"
+                                        viewBox="0 0 13.333 13.333">
+                                        <g id="plus" transform="translate(-3.333 -3.333)">
+                                            <path id="Path_6346" data-name="Path 6346"
+                                                d="M16.5,9.833h-5v-5a.833.833,0,0,0-1.667,0v5h-5a.833.833,0,0,0,0,1.667h5v5a.833.833,0,0,0,1.667,0v-5h5a.833.833,0,0,0,0-1.667Z"
+                                                transform="translate(-0.667 -0.667)" fill="#faaf3a" />
+                                        </g>
+                                    </svg>
+
+                                    Thêm ngôn ngữ
+                                </button> -->
+
+                                <div class="account-teacher">
+                                    <label for="" class="account-form__label">
+                                        Chứng chỉ <sup>*</sup>
+                                    </label>
+
+                                    <div class="account-teacher__group account-teacher__equal">
+                                        <div class="account-teacher__id">
+                                            <!-- Thêm class active để show ảnh -->
+                                            <div class="account-teacher__show">
+                                                <label for="file1" class="account-teacher__example">
+                                                    <input id="file1" type="file" class="account-teacher__file">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="33.435"
+                                                        height="30.063" viewBox="0 0 33.435 30.063">
+                                                        <g id="cloud-upload" transform="translate(-3.323 -4.937)">
+                                                            <path id="Path_6344" data-name="Path 6344"
+                                                                d="M15.886,11.481a1.667,1.667,0,0,0-2.333,0l-5,4.833a1.667,1.667,0,1,0,2.3,2.4L13.036,16.6V26a1.667,1.667,0,1,0,3.333,0V16.681l2.15,2.167a1.673,1.673,0,1,0,2.367-2.367Z"
+                                                                transform="translate(5.298 7.336)"
+                                                                fill="rgba(112,112,112,0.25)" />
+                                                            <path id="Path_6345" data-name="Path 6345"
+                                                                d="M28.121,9.692a10,10,0,0,0-18.9,0A8.333,8.333,0,0,0,4.088,23.475a1.667,1.667,0,1,0,2.5-2.117,5,5,0,0,1,3.75-8.333H10.5a1.667,1.667,0,0,0,1.667-1.333,6.667,6.667,0,0,1,13.067,0A1.667,1.667,0,0,0,26.9,13.025H27a5,5,0,0,1,3.75,8.333,1.671,1.671,0,1,0,2.5,2.217A8.333,8.333,0,0,0,28.121,9.692Z"
+                                                                transform="translate(1.329 1.975)"
+                                                                fill="rgba(112,112,112,0.25)" />
+                                                        </g>
+                                                    </svg>
+
+                                                    <div class="account-teacher__text">
+                                                        Chọn ảnh
+                                                    </div>
+                                                </label>
+                                                <span class="account-teacher__image">
+                                                    <img src="./assets/images/account/Decor.png" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="account-teacher__id">
+                                            <!-- Thêm class active để show ảnh -->
+                                            <div class="account-teacher__show active">
+                                                <label for="file1" class="account-teacher__example">
+                                                    <input id="file1" type="file" class="account-teacher__file">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="33.435"
+                                                        height="30.063" viewBox="0 0 33.435 30.063">
+                                                        <g id="cloud-upload" transform="translate(-3.323 -4.937)">
+                                                            <path id="Path_6344" data-name="Path 6344"
+                                                                d="M15.886,11.481a1.667,1.667,0,0,0-2.333,0l-5,4.833a1.667,1.667,0,1,0,2.3,2.4L13.036,16.6V26a1.667,1.667,0,1,0,3.333,0V16.681l2.15,2.167a1.673,1.673,0,1,0,2.367-2.367Z"
+                                                                transform="translate(5.298 7.336)"
+                                                                fill="rgba(112,112,112,0.25)" />
+                                                            <path id="Path_6345" data-name="Path 6345"
+                                                                d="M28.121,9.692a10,10,0,0,0-18.9,0A8.333,8.333,0,0,0,4.088,23.475a1.667,1.667,0,1,0,2.5-2.117,5,5,0,0,1,3.75-8.333H10.5a1.667,1.667,0,0,0,1.667-1.333,6.667,6.667,0,0,1,13.067,0A1.667,1.667,0,0,0,26.9,13.025H27a5,5,0,0,1,3.75,8.333,1.671,1.671,0,1,0,2.5,2.217A8.333,8.333,0,0,0,28.121,9.692Z"
+                                                                transform="translate(1.329 1.975)"
+                                                                fill="rgba(112,112,112,0.25)" />
+                                                        </g>
+                                                    </svg>
+
+                                                    <div class="account-teacher__text">
+                                                        Chọn ảnh
+                                                    </div>
+                                                </label>
+                                                <span class="account-teacher__image">
+                                                    <img src="./assets/images/account/Mask Group.png" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="account-teacher__id">
+                                            <!-- Thêm class active để show ảnh -->
+                                            <div class="account-teacher__show">
+                                                <label for="file1" class="account-teacher__example">
+                                                    <input id="file1" type="file" class="account-teacher__file">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="33.435"
+                                                        height="30.063" viewBox="0 0 33.435 30.063">
+                                                        <g id="cloud-upload" transform="translate(-3.323 -4.937)">
+                                                            <path id="Path_6344" data-name="Path 6344"
+                                                                d="M15.886,11.481a1.667,1.667,0,0,0-2.333,0l-5,4.833a1.667,1.667,0,1,0,2.3,2.4L13.036,16.6V26a1.667,1.667,0,1,0,3.333,0V16.681l2.15,2.167a1.673,1.673,0,1,0,2.367-2.367Z"
+                                                                transform="translate(5.298 7.336)"
+                                                                fill="rgba(112,112,112,0.25)" />
+                                                            <path id="Path_6345" data-name="Path 6345"
+                                                                d="M28.121,9.692a10,10,0,0,0-18.9,0A8.333,8.333,0,0,0,4.088,23.475a1.667,1.667,0,1,0,2.5-2.117,5,5,0,0,1,3.75-8.333H10.5a1.667,1.667,0,0,0,1.667-1.333,6.667,6.667,0,0,1,13.067,0A1.667,1.667,0,0,0,26.9,13.025H27a5,5,0,0,1,3.75,8.333,1.671,1.671,0,1,0,2.5,2.217A8.333,8.333,0,0,0,28.121,9.692Z"
+                                                                transform="translate(1.329 1.975)"
+                                                                fill="rgba(112,112,112,0.25)" />
+                                                        </g>
+                                                    </svg>
+
+                                                    <div class="account-teacher__text">
+                                                        Chọn ảnh
+                                                    </div>
+                                                </label>
+                                                <span class="account-teacher__image">
+                                                    <img src="./assets/images/account/Decor.png" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="account-teacher__id">
+                                            <!-- Thêm class active để show ảnh -->
+                                            <div class="account-teacher__show">
+                                                <label for="file1" class="account-teacher__example">
+                                                    <input id="file1" type="file" class="account-teacher__file">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="33.435"
+                                                        height="30.063" viewBox="0 0 33.435 30.063">
+                                                        <g id="cloud-upload" transform="translate(-3.323 -4.937)">
+                                                            <path id="Path_6344" data-name="Path 6344"
+                                                                d="M15.886,11.481a1.667,1.667,0,0,0-2.333,0l-5,4.833a1.667,1.667,0,1,0,2.3,2.4L13.036,16.6V26a1.667,1.667,0,1,0,3.333,0V16.681l2.15,2.167a1.673,1.673,0,1,0,2.367-2.367Z"
+                                                                transform="translate(5.298 7.336)"
+                                                                fill="rgba(112,112,112,0.25)" />
+                                                            <path id="Path_6345" data-name="Path 6345"
+                                                                d="M28.121,9.692a10,10,0,0,0-18.9,0A8.333,8.333,0,0,0,4.088,23.475a1.667,1.667,0,1,0,2.5-2.117,5,5,0,0,1,3.75-8.333H10.5a1.667,1.667,0,0,0,1.667-1.333,6.667,6.667,0,0,1,13.067,0A1.667,1.667,0,0,0,26.9,13.025H27a5,5,0,0,1,3.75,8.333,1.671,1.671,0,1,0,2.5,2.217A8.333,8.333,0,0,0,28.121,9.692Z"
+                                                                transform="translate(1.329 1.975)"
+                                                                fill="rgba(112,112,112,0.25)" />
+                                                        </g>
+                                                    </svg>
+
+                                                    <div class="account-teacher__text">
+                                                        Chọn ảnh
+                                                    </div>
+                                                </label>
+                                                <span class="account-teacher__image">
+                                                    <img src="./assets/images/account/Decor.png" alt="">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="account-teacher__cover">
+                                <span class="account-care__category">
+                                    Dịch vụ cung cấp
+                                </span>
+
+                                <div class="account-teacher__list">
+                                    <div class="account-teacher__item account-care__option">
+                                        <input type="checkbox" id="teacher-1" class="account-care__input">
+
+                                        <label for="teacher-1" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737" />
+                                            </svg>
+                                        </label>
+
+                                        <label for="teacher-1" class="account-care__value">
+                                            Đào tạo (Training)
+                                        </label>
+                                    </div>
+
+                                    <div class="account-teacher__item account-care__option">
+                                        <input type="checkbox" id="teacher-2" class="account-care__input">
+
+                                        <label for="teacher-2" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737" />
+                                            </svg>
+                                        </label>
+
+                                        <label for="teacher-2" class="account-care__value">
+                                            Khai vấn ( Coaching )
+                                        </label>
+                                    </div>
+
+                                    <div class="account-teacher__item account-care__option">
+                                        <input type="checkbox" id="teacher-3" class="account-care__input">
+
+                                        <label for="teacher-3" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737" />
+                                            </svg>
+                                        </label>
+
+                                        <label for="teacher-3" class="account-care__value">
+                                            Tư vấn ( Consulting )
+                                        </label>
+                                    </div>
+
+                                    <div class="account-teacher__item account-care__option">
+                                        <input type="checkbox" id="teacher-4" class="account-care__input">
+
+                                        <label for="teacher-4" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737" />
+                                            </svg>
+                                        </label>
+
+                                        <label for="teacher-4" class="account-care__value">
+                                            Cố vấn ( Montoring )
+                                        </label>
+                                    </div>
+
+                                    <div class="account-teacher__item account-care__option">
+                                        <input type="checkbox" id="teacher-3" class="account-care__input">
+
+                                        <label for="teacher-3" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737" />
+                                            </svg>
+                                        </label>
+
+                                        <label for="teacher-3" class="account-care__value">
+                                            Tham vấn ( Conselling )
+                                        </label>
+                                    </div>
+
+                                    <div class="account-teacher__item account-care__option">
+                                        <input type="checkbox" id="teacher-4" class="account-care__input">
+
+                                        <label for="teacher-4" class="account-care__label">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <path id="Path_2122" data-name="Path 2122"
+                                                    d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                    transform="translate(-2 -2)" fill="#27b737" />
+                                            </svg>
+                                        </label>
+
+                                        <label for="teacher-4" class="account-care__value">
+                                            Trị liệu ( Therapy )
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="account-care__category">
+                                Lĩnh vực quan tâm
+                            </span>
+
+                            <div class="account-care__filed">
                                 <span class="account-care__intended">
                                     Dành cho cá nhân
                                 </span>
@@ -442,6 +867,99 @@
                                                             </label>
 
                                                             <label for="optiona4" class="account-care__value">
+                                                                Mối quan hệ giữa các cá nhân
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="account-care__cover">
+                                    <div class="accordion account-care__accordion" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelsStayOpen-heading1">
+                                                <button class="accordion-button account-care__name" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse1"
+                                                    aria-expanded="true" aria-controls="panelsStayOpen-collapse1">
+                                                    Huyến luyện & Cố vấn
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapse1" class="accordion-collapse collapse show"
+                                                aria-labelledby="panelsStayOpen-heading1">
+                                                <div class="accordion-body">
+                                                    <div class="account-care__select">
+                                                        <div class="account-care__option">
+                                                            <input type="checkbox" id="option1"
+                                                                class="account-care__input">
+
+                                                            <label for="option1" class="account-care__label">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                    height="20" viewBox="0 0 20 20">
+                                                                    <path id="Path_2122" data-name="Path 2122"
+                                                                        d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                                        transform="translate(-2 -2)" fill="#27b737" />
+                                                                </svg>
+                                                            </label>
+
+                                                            <label for="option1" class="account-care__value">
+                                                                Sức khỏe
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="account-care__option">
+                                                            <input type="checkbox" id="option2"
+                                                                class="account-care__input">
+
+                                                            <label for="option1" class="account-care__label">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                    height="20" viewBox="0 0 20 20">
+                                                                    <path id="Path_2122" data-name="Path 2122"
+                                                                        d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                                        transform="translate(-2 -2)" fill="#27b737" />
+                                                                </svg>
+                                                            </label>
+
+                                                            <label for="option2" class="account-care__value">
+                                                                Nghề nghiệp /Sự nghiệp
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="account-care__option">
+                                                            <input type="checkbox" id="option3"
+                                                                class="account-care__input">
+
+                                                            <label for="option3" class="account-care__label">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                    height="20" viewBox="0 0 20 20">
+                                                                    <path id="Path_2122" data-name="Path 2122"
+                                                                        d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                                        transform="translate(-2 -2)" fill="#27b737" />
+                                                                </svg>
+                                                            </label>
+
+                                                            <label for="option3" class="account-care__value">
+                                                                Cân bằng cuộc sống
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="account-care__option">
+                                                            <input type="checkbox" id="option4"
+                                                                class="account-care__input">
+
+                                                            <label for="option4" class="account-care__label">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                    height="20" viewBox="0 0 20 20">
+                                                                    <path id="Path_2122" data-name="Path 2122"
+                                                                        d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                                        transform="translate(-2 -2)" fill="#27b737" />
+                                                                </svg>
+                                                            </label>
+
+                                                            <label for="option4" class="account-care__value">
                                                                 Mối quan hệ giữa các cá nhân
                                                             </label>
                                                         </div>
@@ -645,6 +1163,16 @@
                                 </div>
                             </div>
 
+                            <div class="account-form__group account-teacher">
+                                <label for="yearTeacher" class="account-form__label">
+                                    Lĩnh vực khác
+                                </label>
+                                <div class="account-teacher__special">
+                                    <input type="text" class="form-control account-form__input" id="yearTeacher"
+                                        placeholder="Lý sáng chỉ">
+                                </div>
+                            </div>
+
                             <div class="account-form__final">
                                 <div class="account-care__option">
                                     <input type="checkbox" id="optionC-final" class="account-care__input">
@@ -666,13 +1194,10 @@
                                 </div>
                             </div>
 
+
                             <button type="button" class="account-form__btn">
                                 Tạo tài khoản
                             </button>
-
-                            <span class="account-form__move">
-                                Chưa có tài khoản? <a href="#">Đăng ký</a>
-                            </span>
                         </div>
                     </form>
                 </div>
@@ -935,6 +1460,9 @@
     <script type="text/javascript" src="./assets/js/Library/bootstrap.bundle.min.js"></script>
     <!-- Swiper JS -->
     <script type="text/javascript" src="./assets/js/Library/swiper-bundle.min.js"></script>
+    <!-- Select2 JS -->
+    <script type="text/javascript" src="./assets/js/Library/select2.full.min.js"></script>
+    <script type="text/javascript" src="./assets/js/Library/select2-custom.js"></script>
     <!-- Handle View Pass JS -->
     <script src="./assets/js/eyePass.js"></script>
     <!-- Handle Item General -->

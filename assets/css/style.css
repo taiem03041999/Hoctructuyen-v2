@@ -1588,6 +1588,13 @@ body {
     .account-form__abc .account-form__phone + .monitor-info__student,
     .account-form__abc .account-form__phone + .user-detail__upload {
       padding-top: 20px; }
+    .account-form__final {
+      margin-top: 30px; }
+      .account-form__final .account-care__value {
+        font-weight: bold;
+        font-size: 15px; }
+        .account-form__final .account-care__value > strong {
+          color: #faaf3a; }
   .account-care__intended, .account-care__category {
     margin-bottom: 12px; }
   .account-care__filed + .account-care__filed {

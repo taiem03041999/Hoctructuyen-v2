@@ -539,6 +539,19 @@
                 padding-top: 20px;
             }
         }
+
+        &__final {
+            margin-top: 30px;
+
+            .account-care__value {
+                font-weight: bold;
+                font-size: 15px;
+
+                & > strong {
+                    color: $color-yellow;
+                }
+            }
+        }
     }
 
     &-care {
