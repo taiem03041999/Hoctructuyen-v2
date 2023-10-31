@@ -3076,6 +3076,22 @@
                 color: #fff;
             }
         }
+
+        &__group {
+            @include flexBox(top);
+
+            @include responsive_fitSub {
+                flex-direction: column;
+            }
+        }
+
+        &__groupItem {
+            & + & {
+                @include responsive_fitSub {
+                    margin-top: -10px;
+                }
+            }
+        }
     }
 }
 

@@ -160,6 +160,11 @@ body {
 
 .gap-20 {
   height: 20px; }
+  @media only screen and (max-width: 46.1875em) {
+    .gap-20 {
+      height: 10px; }
+      .gap-20 .hide-on-mobile {
+        display: none; } }
   .gap-20.special {
     height: 28px; }
     @media only screen and (max-width: 1440px) {
@@ -5936,6 +5941,11 @@ body {
   min-width: 40px;
   width: 40px;
   height: 40px; }
+  @media only screen and (max-width: 46.1875em) {
+    .course-modal__img {
+      margin-right: 0; }
+      .course-modal__img .hide-on-mobile {
+        display: none; } }
 
 .course-modal .header-social__service {
   width: 100%;
@@ -8290,6 +8300,19 @@ body {
     background-color: #f33066;
     color: #fff; }
 
+.user-section__group {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: flex-start; }
+  @media only screen and (max-width: 1399px) {
+    .user-section__group {
+      flex-direction: column; } }
+
+@media only screen and (max-width: 1399px) {
+  .user-section__groupItem + .user-section__groupItem {
+    margin-top: -10px; } }
+
 .hidden {
   display: none; }
 
@@ -8747,7 +8770,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 10px 15px;
     border-bottom: 1px solid rgba(78, 101, 121, 0.15); }
     .teacher-new__data .teacher-new__info:first-child {
       padding-top: 0; }
@@ -9226,6 +9249,11 @@ i + i {
   .monitor-info__text {
     text-align: left;
     margin-right: 20px; }
+    @media only screen and (max-width: 46.1875em) {
+      .monitor-info__text {
+        margin-left: 14px; }
+        .monitor-info__text .hide-on-mobile {
+          display: none; } }
   .monitor-info__contact {
     margin-top: 12px;
     line-height: 1.5;
@@ -11947,7 +11975,7 @@ i + i {
     /* Handle on hover */ }
     .modal-chat__list.special {
       position: relative;
-      left: 0;
+      left: 10px;
       bottom: 0;
       padding: 0 10px 20px;
       margin-bottom: 64px;
