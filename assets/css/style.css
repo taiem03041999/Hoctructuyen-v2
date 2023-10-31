@@ -10080,19 +10080,12 @@ i + i {
         align-items: center; }
         .monitor-package__current .table-code .hide-on-mobile {
           display: none; } }
-  .monitor-package__current .monitor-info__cover {
-    padding: 2px 26px !important; }
-    @media only screen and (max-width: 1283px) {
-      .monitor-package__current .monitor-info__cover {
-        padding: 2px 0px !important; }
-        .monitor-package__current .monitor-info__cover .hide-on-pc-HD {
-          display: none; } }
-    @media only screen and (max-width: 46.1875em) {
-      .monitor-package__current .monitor-info__cover {
-        border-top: 1px solid rgba(112, 112, 112, 0.25) !important;
-        padding: 8px 12px !important; }
-        .monitor-package__current .monitor-info__cover .hide-on-mobile {
-          display: none; } }
+  @media only screen and (max-width: 46.1875em) {
+    .monitor-package__current .monitor-info__cover {
+      border-top: 1px solid rgba(112, 112, 112, 0.25) !important;
+      padding: 8px 12px !important; }
+      .monitor-package__current .monitor-info__cover .hide-on-mobile {
+        display: none; } }
 
 .monitor-package__option {
   text-align: left; }
@@ -10149,6 +10142,30 @@ i + i {
 
 .monitor-package .monitor-chart__table .monitor-package__option {
   opacity: 0.7; }
+
+.monitor-package__tabs {
+  margin: 0 32px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(78, 101, 121, 0.1); }
+  @media only screen and (max-width: 1283px) {
+    .monitor-package__tabs {
+      margin: 0 15px; }
+      .monitor-package__tabs .hide-on-pc-HD {
+        display: none; } }
+
+.monitor-package__link {
+  padding: 20px 0;
+  font-size: 15px;
+  color: #4e6579;
+  font-weight: bold; }
+  .monitor-package__link.active {
+    color: #24adc1;
+    border-bottom: 3px solid #24adc1; }
+  .monitor-package__link + .monitor-package__link {
+    margin-left: 24px; }
 
 .monitor-data {
   position: relative;

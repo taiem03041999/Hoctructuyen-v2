@@ -1346,11 +1346,11 @@
             }
 
             .monitor-info__cover {
-                padding: 2px 26px !important;
+                // padding: 2px 26px !important;
 
-                @include responsive_HD {
-                    padding: 2px 0px !important;
-                }
+                // @include responsive_HD {
+                //     padding: 2px 0px !important;
+                // }
 
                 @include responsive_mobile {
                     border-top: 1px solid rgba(112, 112, 112, 0.25) !important;
@@ -1428,6 +1428,32 @@
 
             .monitor-package__option {
                 opacity: 0.7;
+            }
+        }
+
+        &__tabs {
+            margin: 0 32px;
+            @include flexBox(hor);
+            border-bottom: 1px solid rgba($color: $color-desc, $alpha: 0.1);
+
+            @include responsive_HD {
+                margin: 0 15px;
+            }
+        }
+
+        &__link {
+            padding: 20px 0;
+            font-size: 15px;
+            color: $color-desc;
+            font-weight: bold;
+
+            &.active {
+                color: $color-main;
+                border-bottom: 3px solid $color-main;
+            }
+
+            & + & {
+                margin-left: 24px;
             }
         }
     }
