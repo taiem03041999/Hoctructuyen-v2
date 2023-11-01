@@ -674,12 +674,19 @@
             border: 0;
             border-radius: 7px;
             color: #fff;
+            min-width: max-content;
 
             @include responsive_mobile {
                 position: relative;
                 margin: 0 auto;
                 right: 0;
                 margin-top: 15px;
+            }
+
+            &.special {
+                position: relative;
+                right: initial;
+                top: initial;
             }
         }
     }

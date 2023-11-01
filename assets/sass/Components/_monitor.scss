@@ -93,6 +93,7 @@
 
     &-info {
         margin-top: 24px;
+        position: relative;
 
         &.special {
             .table {
@@ -297,6 +298,7 @@
 
         &__header {
             background-color: #eff3f7;
+            padding-left: 20px !important;
 
             @include responsive_mobile {
                 display: none;
@@ -1166,6 +1168,10 @@
 
                 &-code {
                     width: 16%;
+
+                    &.special {
+                        width: 38%;
+                    }
                 }
 
                 &-progress {
@@ -1209,6 +1215,7 @@
                 @include responsive_mobile {
                     margin-bottom: 0px;
                     margin-right: 6px;
+                    min-width: max-content;
                 }
             }
 
@@ -1437,7 +1444,12 @@
             border-bottom: 1px solid rgba($color: $color-desc, $alpha: 0.1);
 
             @include responsive_HD {
-                margin: 0 15px;
+                margin: 20px 15px 0;
+                border-bottom: 0;
+            }
+
+            @include responsive_mobile {
+                flex-flow: row wrap;
             }
         }
 
@@ -1447,13 +1459,30 @@
             color: $color-desc;
             font-weight: bold;
 
+            @include responsive_mobile {
+                padding: 2px 15px 3px;
+                border-radius: 20px;
+                border: 1px solid $color-main;
+                margin: 0 10px 10px 0;
+            }
+
             &.active {
                 color: $color-main;
                 border-bottom: 3px solid $color-main;
+
+                @include responsive_mobile {
+                    border-bottom: 0;
+                    background-color: $color-main;
+                    color: #fff;
+                }
             }
 
             & + & {
                 margin-left: 24px;
+
+                @include responsive_mobile {
+                    margin-left: 0;
+                }
             }
         }
     }
@@ -1579,6 +1608,87 @@
                 color: $color-main;
                 font-weight: 500;
                 border-color: #dee2e6 #dee2e6 #fff;
+            }
+        }
+    }
+
+    &-file {
+        &__cover {
+            @include flexBox(bothSides);
+            align-items: flex-start;
+
+            @include responsive_mobile {
+                flex-direction: column;
+            }
+        }
+
+        &__detail {
+            width: 100%;
+            padding-right: 10%;
+
+            @include responsive_mobile {
+                padding-right: 0;
+            }
+        }
+
+        &__data {
+            height: 24px;
+            border-radius: 5px;
+            background-color: #dce0e4;
+            margin-bottom: 15px;
+
+            .progress-bar {
+                border-radius: 5px;
+                color: $color-main;
+                height: 100%;
+                background-color: $color-main;
+            }
+        }
+
+        &__sides {
+            @include flexBox(bothSides);
+            font-weight: bold;
+        }
+
+        &__center {
+            @include flexBox(both);
+            margin-top: 20px;
+
+            @include responsive_mobile {
+                margin: 15px 0 0;
+                flex-direction: column;
+            }
+        }
+
+        &__sub {
+            padding-left: 30px;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+                width: 24px;
+                height: 16px;
+                border-radius: 2px;
+                background-color: #dce0e4;
+            }
+
+            &:first-child {
+                &::after {
+                    background-color: $color-main;
+                }
+            }
+
+            & + & {
+                margin-left: 30px;
+
+                @include responsive_mobile {
+                    margin: 15px 0 0 0;
+                }
             }
         }
     }

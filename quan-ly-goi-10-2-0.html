@@ -636,47 +636,78 @@
                                     <div class="user-content__header monitor-member__header">
                                         <div class="user-content__heading">
                                             <h3 class="user-content__title">Quản lý gói</h3>
+
+                                            <button class="user-content__package" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                                Nâng cấp gói
+                                            </button>
                                         </div>
                                     </div>
 
                                     <div class="monitor-package__tabs">
                                         <!-- add active -->
-                                        <a href="#" class="monitor-package__link">Premium Coaching</a>
+                                        <a href="#" class="monitor-package__link active">Premium Coaching</a>
 
                                         <!-- add active -->
-                                        <a href="#" class="monitor-package__link active">Tài liệu</a>
+                                        <a href="#" class="monitor-package__link">Tài liệu</a>
 
                                         <!-- add active -->
                                         <a href="#" class="monitor-package__link">Marketing</a>
                                     </div>
 
                                     <div class="monitor-package__info">
-                                        <div class="monitor-file__cover">
-                                            <div class="monitor-file__detail">
-                                                <div class="monitor-file__data">
-                                                    <div class="progress-bar" role="progressbar" style="width: 75%"
-                                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                                    </div>
+                                        <div class="monitor-package__cover">
+                                            <div class="monitor-info monitor-package__current">
+                                                <div class=" monitor-info__cover monitor-package__title">
+                                                    <span class="table-code">Tên gói</span>
+                                                    <span class="table-code"></span>
+                                                    <span class="table-code">Ngày gia hạn</span>
+                                                    <span class="table-code">Ngày hết hạn</span>
+                                                    <span class="table-code">Thời gian còn lại</span>
                                                 </div>
 
-                                                <div class="monitor-file__sides">
-                                                    <span>9 MB</span>
-                                                    <span>477 MB</span>
-                                                </div>
+                                                <div class="monitor-info__list">
+                                                    <div class="monitor-info__cover monitor-info__item">
+                                                        <span class="table-code">
+                                                            <span class="manager-label monitor-info__label">
+                                                                Tên gói:
+                                                            </span>
+                                                            Gói 1 tháng
+                                                        </span>
 
-                                                <div class="monitor-file__center">
-                                                    <div class="monitor-file__sub">
-                                                        Đã sử dụng: 9 MB
-                                                    </div>
+                                                        <span class="table-code">
 
-                                                    <div class="monitor-file__sub">
-                                                        Còn trống: 19 MB
+                                                        </span>
+
+                                                        <span class="table-code">
+                                                            <span class="manager-label monitor-info__label">
+                                                                Ngày gia hạn:
+                                                            </span>
+                                                            05/09/2023
+                                                        </span>
+
+                                                        <span class="table-code">
+                                                            <span class="manager-label monitor-info__label">
+                                                                Ngày hết hạn:
+                                                            </span>
+                                                            05/09/2024
+                                                        </span>
+
+                                                        <span class="table-code">
+                                                            <span class="manager-label monitor-info__label">
+                                                                Thời gian còn lại:
+                                                            </span>
+                                                            305 ngày
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <button type="button" class="user-content__package special">Mua bộ
-                                                nhớ</button>
+                                            <div class="progress monitor-package__progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 75%"
+                                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -689,7 +720,10 @@
                                             <div class="monitor-info__header monitor-info__cover">
                                                 <span class="table-number">STT</span>
                                                 <span class="table-progress">Tên gói</span>
-                                                <span class="table-code special">Ngày gia hạn</span>
+                                                <span class="table-code">Ngày gia hạn</span>
+                                                <span class="table-quantity monitor-manager__quantity">
+                                                    Ngày hết hạn
+                                                </span>
                                                 <span class="table-total">Chi phí</span>
                                             </div>
 
@@ -704,28 +738,35 @@
 
                                                         <div class="monitor-package__option">
                                                             <span class="monitor-package__text">
-                                                                10Gb
+                                                                1 tháng
                                                             </span>
                                                         </div>
                                                     </span>
 
-                                                    <span class="table-code special">
+                                                    <span class="table-code monitor-manager__code">
                                                         <span class="manager-label monitor-info__label">
                                                             Ngày gia hạn:
                                                         </span>
-                                                        05/09/2023
+                                                        01/09/2023
+                                                    </span>
+
+                                                    <span class="table-quantity monitor-manager__quantity">
+                                                        <span class="manager-label monitor-info__label">
+                                                            Ngày hết hạn:
+                                                        </span>
+                                                        30/09/2024
                                                     </span>
 
                                                     <span class="table-total">
                                                         <span class="manager-label monitor-info__label">
                                                             Chi phí:
                                                         </span>
-                                                        450.000đ
+                                                        4.000.000đ
                                                     </span>
                                                 </div>
 
                                                 <div class="monitor-info__cover monitor-info__item">
-                                                    <span class="table-number monitor-manager__number">2</span>
+                                                    <span class="table-number monitor-manager__number">1</span>
 
                                                     <span class="table-progress ">
                                                         <span class="manager-label monitor-info__label">
@@ -734,28 +775,35 @@
 
                                                         <div class="monitor-package__option">
                                                             <span class="monitor-package__text">
-                                                                10Gb
+                                                                1 tháng
                                                             </span>
                                                         </div>
                                                     </span>
 
-                                                    <span class="table-code special">
+                                                    <span class="table-code monitor-manager__code">
                                                         <span class="manager-label monitor-info__label">
                                                             Ngày gia hạn:
                                                         </span>
-                                                        05/09/2023
+                                                        01/09/2023
+                                                    </span>
+
+                                                    <span class="table-quantity monitor-manager__quantity">
+                                                        <span class="manager-label monitor-info__label">
+                                                            Ngày hết hạn:
+                                                        </span>
+                                                        30/09/2024
                                                     </span>
 
                                                     <span class="table-total">
                                                         <span class="manager-label monitor-info__label">
                                                             Chi phí:
                                                         </span>
-                                                        450.000đ
+                                                        4.000.000đ
                                                     </span>
                                                 </div>
 
                                                 <div class="monitor-info__cover monitor-info__item">
-                                                    <span class="table-number monitor-manager__number">3</span>
+                                                    <span class="table-number monitor-manager__number">1</span>
 
                                                     <span class="table-progress ">
                                                         <span class="manager-label monitor-info__label">
@@ -764,23 +812,30 @@
 
                                                         <div class="monitor-package__option">
                                                             <span class="monitor-package__text">
-                                                                10Gb
+                                                                1 tháng
                                                             </span>
                                                         </div>
                                                     </span>
 
-                                                    <span class="table-code special">
+                                                    <span class="table-code monitor-manager__code">
                                                         <span class="manager-label monitor-info__label">
                                                             Ngày gia hạn:
                                                         </span>
-                                                        05/09/2023
+                                                        01/09/2023
+                                                    </span>
+
+                                                    <span class="table-quantity monitor-manager__quantity">
+                                                        <span class="manager-label monitor-info__label">
+                                                            Ngày hết hạn:
+                                                        </span>
+                                                        30/09/2024
                                                     </span>
 
                                                     <span class="table-total">
                                                         <span class="manager-label monitor-info__label">
                                                             Chi phí:
                                                         </span>
-                                                        450.000đ
+                                                        4.000.000đ
                                                     </span>
                                                 </div>
                                             </div>
