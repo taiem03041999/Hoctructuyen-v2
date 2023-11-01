@@ -542,6 +542,10 @@
         &__list {
             padding: 0 0 0 20px;
 
+            @include responsive_mobile {
+                padding: 0 15px;
+            }
+
             &.special {
                 padding: 0;
             }
@@ -738,6 +742,30 @@
                     align-items: self-start;
                 }
             }
+        }
+
+        &__remove {
+            border: 0;
+            background-color: transparent;
+        }
+
+        &__file {
+            @include flexBox(hor);
+        }
+
+        &__icon {
+            max-width: 30px;
+            margin-right: 7px;
+        }
+
+        &__text {
+            @include lineDot(1);
+            font-weight: 400;
+        }
+
+        &__sub {
+            font-size: 13px;
+            color: rgba($color: $color-desc, $alpha: 0.5);
         }
     }
 
@@ -1620,6 +1648,30 @@
             @include responsive_mobile {
                 flex-direction: column;
             }
+
+            &.special {
+                padding: 0 30px 20px;
+
+                @include responsive_HD {
+                    padding: 0 20px 20px;
+                }
+
+                .monitor-file__detail {
+                    padding: 0 5%;
+
+                    @include responsive_mobile {
+                        padding: 0;
+                    }
+                }
+
+                .user-content__title {
+                    min-width: max-content;
+
+                    @include responsive_mobile {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
         }
 
         &__detail {
@@ -1690,6 +1742,105 @@
                     margin: 15px 0 0 0;
                 }
             }
+        }
+
+        &__header {
+            @include flexBox(bothSides);
+            margin-bottom: 20px;
+        }
+
+        &__upload {
+            position: relative;
+            border: 0;
+            background-color: transparent;
+            color: $color-yellow;
+            min-width: max-content;
+        }
+
+        &__list {
+            @include flexBox(hor);
+            margin-left: 30px;
+            max-width: 100%;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            overflow-y: auto;
+
+            @include responsive_HD {
+                margin-left: 20px;
+            }
+        }
+
+        &__item {
+            position: relative;
+            width: 150px;
+            min-width: 150px;
+            height: 130px;
+
+            border-radius: 10px;
+            border: 1px solid rgba($color: $color-desc, $alpha: 0.1);
+            background-color: rgba($color: #eff3f7, $alpha: 0.5);
+            padding: 15px;
+            transition: all 0.3s;
+
+            &:hover {
+                border: 1px solid $color-main;
+                background-color: #fff;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            }
+
+            & + & {
+                margin-left: 18px;
+            }
+        }
+
+        &__icon {
+            width: 45px;
+            height: auto;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 4px 0px;
+            margin-bottom: 14px;
+        }
+
+        &__remove {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+
+            background-color: transparent;
+            border: 0;
+        }
+
+        &__name {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        &__total {
+            font-size: 12px;
+            font-style: italic;
+            color: #9f9f9f;
+            line-height: 16px;
+        }
+
+        &__input {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        &__form {
+            width: 30%;
+
+            @include responsive_mobile {
+                width: 100%;
+                margin-right: 10px;
+            }
+        }
+
+        &__search {
+            width: 100%;
+            padding: 8px 15px;
+            border: 1px solid rgba($color: $color-desc, $alpha: 0.1);
+            border-radius: 5px;
         }
     }
 }

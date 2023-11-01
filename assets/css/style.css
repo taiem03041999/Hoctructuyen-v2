@@ -9374,6 +9374,11 @@ i + i {
     padding: 0 30px 30px; }
   .monitor-info__list {
     padding: 0 0 0 20px; }
+    @media only screen and (max-width: 46.1875em) {
+      .monitor-info__list {
+        padding: 0 15px; }
+        .monitor-info__list .hide-on-mobile {
+          display: none; } }
     .monitor-info__list.special {
       padding: 0; }
 
@@ -9557,6 +9562,31 @@ i + i {
 
 .monitor-manager__custom .monitor-info__item {
   align-items: self-start; }
+
+.monitor-manager__remove {
+  border: 0;
+  background-color: transparent; }
+
+.monitor-manager__file {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center; }
+
+.monitor-manager__icon {
+  max-width: 30px;
+  margin-right: 7px; }
+
+.monitor-manager__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 400; }
+
+.monitor-manager__sub {
+  font-size: 13px;
+  color: rgba(78, 101, 121, 0.5); }
 
 .monitor-member__wrapper {
   padding: 28px 32px; }
@@ -10321,6 +10351,27 @@ i + i {
       flex-direction: column; }
       .monitor-file__cover .hide-on-mobile {
         display: none; } }
+  .monitor-file__cover.special {
+    padding: 0 30px 20px; }
+    @media only screen and (max-width: 1283px) {
+      .monitor-file__cover.special {
+        padding: 0 20px 20px; }
+        .monitor-file__cover.special .hide-on-pc-HD {
+          display: none; } }
+    .monitor-file__cover.special .monitor-file__detail {
+      padding: 0 5%; }
+      @media only screen and (max-width: 46.1875em) {
+        .monitor-file__cover.special .monitor-file__detail {
+          padding: 0; }
+          .monitor-file__cover.special .monitor-file__detail .hide-on-mobile {
+            display: none; } }
+    .monitor-file__cover.special .user-content__title {
+      min-width: max-content; }
+      @media only screen and (max-width: 46.1875em) {
+        .monitor-file__cover.special .user-content__title {
+          margin-bottom: 20px; }
+          .monitor-file__cover.special .user-content__title .hide-on-mobile {
+            display: none; } }
 
 .monitor-file__detail {
   width: 100%;
@@ -10386,6 +10437,97 @@ i + i {
         margin: 15px 0 0 0; }
         .monitor-file__sub + .monitor-file__sub .hide-on-mobile {
           display: none; } }
+
+.monitor-file__header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px; }
+
+.monitor-file__upload {
+  position: relative;
+  border: 0;
+  background-color: transparent;
+  color: #faaf3a;
+  min-width: max-content; }
+
+.monitor-file__list {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  max-width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  overflow-y: auto; }
+  @media only screen and (max-width: 1283px) {
+    .monitor-file__list {
+      margin-left: 20px; }
+      .monitor-file__list .hide-on-pc-HD {
+        display: none; } }
+
+.monitor-file__item {
+  position: relative;
+  width: 150px;
+  min-width: 150px;
+  height: 130px;
+  border-radius: 10px;
+  border: 1px solid rgba(78, 101, 121, 0.1);
+  background-color: rgba(239, 243, 247, 0.5);
+  padding: 15px;
+  transition: all 0.3s; }
+  .monitor-file__item:hover {
+    border: 1px solid #24adc1;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
+  .monitor-file__item + .monitor-file__item {
+    margin-left: 18px; }
+
+.monitor-file__icon {
+  width: 45px;
+  height: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 4px 0px;
+  margin-bottom: 14px; }
+
+.monitor-file__remove {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: 0; }
+
+.monitor-file__name {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px; }
+
+.monitor-file__total {
+  font-size: 12px;
+  font-style: italic;
+  color: #9f9f9f;
+  line-height: 16px; }
+
+.monitor-file__input {
+  position: absolute;
+  visibility: hidden; }
+
+.monitor-file__form {
+  width: 30%; }
+  @media only screen and (max-width: 46.1875em) {
+    .monitor-file__form {
+      width: 100%;
+      margin-right: 10px; }
+      .monitor-file__form .hide-on-mobile {
+        display: none; } }
+
+.monitor-file__search {
+  width: 100%;
+  padding: 8px 15px;
+  border: 1px solid rgba(78, 101, 121, 0.1);
+  border-radius: 5px; }
 
 .additional-course {
   width: 71.6%; }
