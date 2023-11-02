@@ -1669,7 +1669,7 @@ body {
   .account-care__label {
     min-width: 20px;
     height: 20px;
-    margin-top: 2px;
+    margin-top: 1px;
     margin-right: 10px;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1767,6 +1767,8 @@ body {
         object-fit: cover; }
       .account-teacher__image > img {
         object-fit: contain; }
+      .account-teacher__image.video {
+        padding-top: 0; }
     .account-teacher__file {
       display: none; }
     .account-teacher__example {
@@ -1782,10 +1784,41 @@ body {
       min-height: 160px;
       border-radius: 10px;
       border: 1px dashed rgba(112, 112, 112, 0.5); }
+      .account-teacher__example .account-teacher__text {
+        color: rgba(78, 101, 121, 0.4); }
+      .account-teacher__example > svg path {
+        fill: rgba(78, 101, 121, 0.4); }
       .account-teacher__example.edit {
         min-height: 50px; }
         .account-teacher__example.edit .account-teacher__text {
           color: rgba(78, 101, 121, 0.4); }
+      .account-teacher__example.gradient {
+        border-radius: 10px;
+        overflow: hidden;
+        border: 0; }
+        .account-teacher__example.gradient .account-teacher__text {
+          color: #fff; }
+        .account-teacher__example.gradient > svg path {
+          fill: #fff; }
+        .account-teacher__example.gradient svg,
+        .account-teacher__example.gradient .account-teacher__text {
+          position: relative;
+          z-index: 2; }
+        .account-teacher__example.gradient::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          background: rgba(24, 25, 27, 0.5);
+          z-index: 0; }
+      .account-teacher__example.special {
+        min-height: 45px;
+        height: 45px;
+        flex-direction: row; }
+        .account-teacher__example.special .account-teacher__text {
+          width: fit-content;
+          margin: 0 0 0 5px; }
     .account-teacher__text {
       width: 79%;
       font-size: 14px;
@@ -6513,13 +6546,6 @@ body {
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: cover !important; }
-    .user-content__update .account-teacher__example.gradient::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      background: rgba(24, 25, 27, 0.5); }
     .user-content__update .account-teacher__example.gradient svg {
       position: relative;
       z-index: 2; }
@@ -8531,7 +8557,7 @@ body {
   padding-top: 20px; }
 
 .teacher-new__custom {
-  padding-bottom: 30px; }
+  padding-bottom: 20px; }
   .teacher-new__custom.hold {
     opacity: 0.25; }
 
@@ -10662,6 +10688,22 @@ i + i {
           display: none !important; } }
     .additional-course__icon svg {
       margin: 0 10px 10px 0; }
+  .additional-course__video {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px; }
+    @media only screen and (max-width: 46.1875em) {
+      .additional-course__video {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px 5px; }
+        .additional-course__video .hide-on-mobile {
+          display: none; } }
+    .additional-course__video iframe {
+      max-width: 100%; }
+    .additional-course__video .account-teacher__show + .account-teacher__show {
+      margin-top: 0; }
 
 .additional-sidebar.special .user-content__update {
   padding-bottom: 30px; }
