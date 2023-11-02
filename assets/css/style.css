@@ -1529,6 +1529,21 @@ body {
         .account-form__input.textarea.special {
           min-height: 300px;
           margin-bottom: 30px; }
+      .account-form__input.wrap {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+        color: rgba(78, 101, 121, 0.25);
+        padding: 12px 20px; }
+        .account-form__input.wrap input {
+          width: 100%;
+          border: 0;
+          background-color: transparent; }
+          .account-form__input.wrap input::placeholder {
+            color: rgba(78, 101, 121, 0.3); }
     .account-form__target {
       font-size: 14px;
       color: #faaf3a;

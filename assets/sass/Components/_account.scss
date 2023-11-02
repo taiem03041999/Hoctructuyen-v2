@@ -461,6 +461,23 @@
                     margin-bottom: 30px;
                 }
             }
+
+            &.wrap {
+                @include flexBox(bothSides);
+                font-size: 15px;
+                color: rgba($color: $color-desc, $alpha: 0.25);
+                padding: 12px 20px;
+
+                input {
+                    width: 100%;
+                    border: 0;
+                    background-color: transparent;
+
+                    &::placeholder {
+                        color: rgba($color: $color-desc, $alpha: 0.3);
+                    }
+                }
+            }
         }
 
         &__target {
