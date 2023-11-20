@@ -59,9 +59,11 @@
     &-sidebar {
         min-width: 28%;
         padding: 15px 0;
+        border-right: 1px solid rgba($color: $color-desc, $alpha: 0.3);
 
         @include responsive_bothTM {
             display: none;
+            border-right: 0;
         }
 
         &__item {
@@ -70,7 +72,7 @@
             &.active {
                 background-color: $color-yellow;
                 margin-bottom: 10px;
-                clip-path: polygon(100% 0, 100% 35%, 92% 50%, 100% 65%, 100% 100%, 0 100%, 0 0);
+                clip-path: polygon(100% 0, 100% 35%, 94% 50%, 100% 65%, 100% 100%, 0 100%, 0 0);
 
                 .tabs-sidebar__link {
                     color: #fff;
@@ -88,11 +90,11 @@
     &-content {
         width: 100%;
         padding: 25px;
-        border-left: 1px solid rgba($color: $color-desc, $alpha: 0.3);
+        // border-left: 1px solid rgba($color: $color-desc, $alpha: 0.3);
 
         @include responsive_bothTM {
             padding: 0 var(--width-tabs);
-            border-left: 0;
+            // border-left: 0;
         }
 
         &__detail {

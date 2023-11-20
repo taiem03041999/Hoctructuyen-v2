@@ -757,6 +757,11 @@
 
             &.special {
                 flex-direction: row-reverse;
+                margin-bottom: 50px;
+
+                @include responsive_fit {
+                    margin-bottom: 0;
+                }
 
                 @include responsive_bothTM {
                     flex-direction: column;
@@ -853,6 +858,29 @@
 
             img + img {
                 margin-top: 20px;
+            }
+
+            &.special {
+                position: relative;
+
+                & > img {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    right: 0;
+                    margin-top: 40px;
+
+                    @include responsive_fit {
+                        min-width: 100%;
+                        position: relative;
+                        top: initial;
+
+                        transform: initial;
+                        right: initial;
+                        margin-top: 0;
+                    }
+                }
             }
         }
     }

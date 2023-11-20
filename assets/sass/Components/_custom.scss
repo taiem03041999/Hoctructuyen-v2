@@ -27,11 +27,17 @@
                 color: #fff;
                 background-color: $color-main;
                 border-color: $color-main;
+                min-width: max-content;
             }
         }
     }
 
     &-cover {
+        .monitor-footer.filter-pagination {
+            padding: 0;
+            margin-bottom: 25px;
+        }
+
         &__list {
             margin-bottom: 30px;
         }
@@ -68,6 +74,14 @@
 
             @include responsive_mobile {
                 flex-direction: column;
+            }
+
+            .custom-cover__group .modal-book__list.special {
+                margin-left: 25px;
+
+                @include responsive_mobile {
+                    margin: 0;
+                }
             }
         }
 

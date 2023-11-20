@@ -1,14 +1,13 @@
-$font-main: "Roboto", sans-serif;
-$font-mon: "Montserrat", sans-serif;
-
 @font-face {
     font-family: "UTMASHeartbeat";
     src:
         local("UTMASHeartbeat"),
-        url("/assets/font/UTM\ A\ S\ Heartbeat.ttf") format("truetype");
+        url("/assets/font/UTMASHeartbeat.ttf") format("truetype");
     font-style: normal;
 }
 
+$font-main: "Roboto", sans-serif;
+$font-mon: "Montserrat", sans-serif;
 $font-title: "UTMASHeartbeat", sans-serif;
 
 // ======================== Color Main ========================
