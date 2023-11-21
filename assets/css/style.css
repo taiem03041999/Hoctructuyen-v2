@@ -1763,6 +1763,10 @@ body {
         display: none; }
       .account-teacher__show.active .account-teacher__image {
         display: block; }
+      .account-teacher__show.active .account-teacher__image.video {
+        border: 0;
+        border-radius: 0;
+        height: fit-content; }
       .account-teacher__show + .account-teacher__show {
         margin-top: 20px; }
     .account-teacher__image {

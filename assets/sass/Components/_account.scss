@@ -805,6 +805,12 @@
                         display: block;
                     }
                 }
+
+                .account-teacher__image.video {
+                    border: 0;
+                    border-radius: 0;
+                    height: fit-content;
+                }
             }
 
             & + & {
