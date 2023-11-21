@@ -711,6 +711,37 @@
                 color: $color-red;
             }
         }
+
+        &__like {
+            border: none;
+            background-color: transparent;
+            margin: 0 3px 3px 0;
+
+            .fa-regular,
+            .fa-solid {
+                color: $color-main;
+                margin-right: 3px;
+            }
+
+            .fa-regular + .fa-solid {
+                margin-left: 0;
+            }
+
+            .fa-solid {
+                display: none;
+            }
+
+            &.active,
+            &:hover {
+                .fa-regular {
+                    display: none;
+                }
+
+                .fa-solid {
+                    display: block;
+                }
+            }
+        }
     }
 
     &-category {

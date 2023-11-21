@@ -11721,6 +11721,23 @@ i + i {
   .group-post__status.cancel {
     color: #f33066; }
 
+.group-post__like {
+  border: none;
+  background-color: transparent;
+  margin: 0 3px 3px 0; }
+  .group-post__like .fa-regular,
+  .group-post__like .fa-solid {
+    color: #24adc1;
+    margin-right: 3px; }
+  .group-post__like .fa-regular + .fa-solid {
+    margin-left: 0; }
+  .group-post__like .fa-solid {
+    display: none; }
+  .group-post__like.active .fa-regular, .group-post__like:hover .fa-regular {
+    display: none; }
+  .group-post__like.active .fa-solid, .group-post__like:hover .fa-solid {
+    display: block; }
+
 .group-category__item {
   display: -webkit-flex;
   display: -ms-flexbox;
