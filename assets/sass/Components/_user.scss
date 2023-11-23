@@ -444,6 +444,14 @@
                 font-size: 20px;
                 text-align: center;
             }
+
+            & > span {
+                font-size: 14px;
+                color: #fff;
+                background-color: #faaf3a;
+                border-radius: 10px;
+                padding: 2px 3px 1px;
+            }
         }
 
         &__text {
@@ -691,7 +699,6 @@
         }
     }
 
-    // information
     &-information {
         @include flexBox(null);
         flex-direction: row-reverse;
@@ -719,7 +726,6 @@
         }
     }
 
-    // account
     &-account {
         .account-form {
             &__main {
@@ -744,7 +750,6 @@
         }
     }
 
-    // course
     &-course {
         &__list {
             margin-top: -25px;
@@ -935,7 +940,6 @@
         }
     }
 
-    // process
     &-process {
         overflow-x: auto;
 
@@ -952,7 +956,7 @@
 
         /* width */
         &::-webkit-scrollbar {
-            height: 7px;
+            height: 10px;
         }
 
         /* Track */
@@ -1416,7 +1420,6 @@
         }
     }
 
-    // detail
     &-detail {
         &__section {
             padding: 33px 0 35px;
@@ -1911,7 +1914,6 @@
         }
     }
 
-    // notification
     &-notification {
         max-height: 917px;
         overflow: auto;
@@ -2024,7 +2026,6 @@
         }
     }
 
-    // register
     &-register {
         &.detail {
             padding-top: 30px;
@@ -2161,7 +2162,6 @@
         }
     }
 
-    // introduce
     &-introduce {
         &__wrapper {
             .row {
@@ -2180,7 +2180,6 @@
         }
     }
 
-    // support
     &-support {
         &__content {
             @include flexBox(bothSides);
@@ -2328,7 +2327,6 @@
         }
     }
 
-    // package
     &-package {
         &__wrapper {
             .premium-priceList {
@@ -2488,7 +2486,6 @@
         }
     }
 
-    // monitor
     &-monitor {
         &__input {
             width: 322px;

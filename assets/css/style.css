@@ -6488,6 +6488,12 @@ body {
         text-align: center; }
         .user-content__title .hide-on-mobile {
           display: none; } }
+    .user-content__title > span {
+      font-size: 14px;
+      color: #fff;
+      background-color: #faaf3a;
+      border-radius: 10px;
+      padding: 2px 3px 1px; }
   .user-content__text {
     font-size: 14px;
     color: #4e6579;
@@ -6869,7 +6875,7 @@ body {
   /* Handle */
   /* Handle on hover */ }
   .user-process::-webkit-scrollbar {
-    height: 7px; }
+    height: 10px; }
   .user-process::-webkit-scrollbar-track {
     box-shadow: inset 0 0 2px grey;
     border-radius: 10px; }
@@ -11603,7 +11609,7 @@ i + i {
   .group-post__type.special {
     max-width: 100%; }
   .group-post__type::-webkit-scrollbar {
-    height: 7px; }
+    height: 10px; }
   .group-post__type::-webkit-scrollbar-track {
     box-shadow: inset 0 0 2px grey;
     border-radius: 10px; }
