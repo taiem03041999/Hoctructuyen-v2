@@ -79,6 +79,17 @@
             padding: 48px 24px;
         }
 
+        &.special {
+            padding: 0;
+            box-shadow: none;
+        }
+
+        &__header {
+            &.special {
+                margin-bottom: 30px;
+            }
+        }
+
         &__title {
             font-size: 35px;
             font-weight: 500;
