@@ -119,5 +119,9 @@
             font-size: 14px;
             color: rgba($color: $color-desc, $alpha: 0.75);
         }
+
+        &__group {
+            min-width: max-content;
+        }
     }
 }

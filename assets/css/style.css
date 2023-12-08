@@ -12831,3 +12831,6 @@ i + i {
 .custom-cover__sub {
   font-size: 14px;
   color: rgba(78, 101, 121, 0.75); }
+
+.custom-cover__group {
+  min-width: max-content; }
