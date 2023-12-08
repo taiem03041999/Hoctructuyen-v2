@@ -294,6 +294,21 @@
                     }
                 }
             }
+
+            &.special2 {
+                .table {
+                    &-number,
+                    &-total,
+                    &-quantity,
+                    &-progress,
+                    &-name,
+                    &-info,
+                    &-progress,
+                    &-edit {
+                        text-align: left;
+                    }
+                }
+            }
         }
 
         &__header {
@@ -333,6 +348,10 @@
             .table-remove {
                 justify-content: center;
                 padding-left: 15px;
+            }
+
+            &.special {
+                text-align: left;
             }
         }
 
@@ -1692,6 +1711,10 @@
                     }
                 }
             }
+
+            &.special2 {
+                align-items: center;
+            }
         }
 
         &__detail {
@@ -1700,6 +1723,14 @@
 
             @include responsive_mobile {
                 padding-right: 0;
+            }
+
+            &.special {
+                width: 60%;
+
+                @include responsive_mobile {
+                    width: 100%;
+                }
             }
         }
 

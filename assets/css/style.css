@@ -9311,6 +9311,8 @@ i + i {
         width: 100% !important; }
         .monitor-info__cover.special .table-code .hide-on-mobile, .monitor-info__cover.special .table-quantity .hide-on-mobile, .monitor-info__cover.special .table-remove .hide-on-mobile {
           display: none; } }
+    .monitor-info__cover.special2 .table-number, .monitor-info__cover.special2 .table-total, .monitor-info__cover.special2 .table-quantity, .monitor-info__cover.special2 .table-progress, .monitor-info__cover.special2 .table-name, .monitor-info__cover.special2 .table-info, .monitor-info__cover.special2 .table-progress, .monitor-info__cover.special2 .table-edit {
+      text-align: left; }
   .monitor-info__header {
     background-color: #eff3f7;
     padding-left: 20px !important; }
@@ -9346,6 +9348,8 @@ i + i {
     .monitor-info__header .table-remove {
       justify-content: center;
       padding-left: 15px; }
+    .monitor-info__header.special {
+      text-align: left; }
   .monitor-info__item {
     position: relative;
     margin: 0 20px 0 0;
@@ -10518,6 +10522,8 @@ i + i {
           margin-bottom: 20px; }
           .monitor-file__cover.special .user-content__title .hide-on-mobile {
             display: none; } }
+  .monitor-file__cover.special2 {
+    align-items: center; }
 
 .monitor-file__detail {
   width: 100%;
@@ -10527,6 +10533,13 @@ i + i {
       padding-right: 0; }
       .monitor-file__detail .hide-on-mobile {
         display: none; } }
+  .monitor-file__detail.special {
+    width: 60%; }
+    @media only screen and (max-width: 46.1875em) {
+      .monitor-file__detail.special {
+        width: 100%; }
+        .monitor-file__detail.special .hide-on-mobile {
+          display: none; } }
 
 .monitor-file__data {
   height: 24px;
