@@ -3617,6 +3617,42 @@ body {
       border-top: 0;
       padding-top: 0;
       margin-top: -10px; }
+  .premium-priceList__tab {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-flow: row wrap; }
+    @media only screen and (max-width: 1283px) {
+      .premium-priceList__tab {
+        position: relative;
+        left: 0;
+        transform: initial;
+        justify-content: center;
+        margin-bottom: 15px; }
+        .premium-priceList__tab .hide-on-pc-HD {
+          display: none; } }
+  .premium-priceList__tabLink {
+    padding: 7px 15px;
+    border: 1px solid #4e6579;
+    background-color: transparent;
+    color: #4e6579;
+    border-radius: 5px;
+    transition: all 0.3s;
+    margin: 0 10px 10px 0; }
+    @media only screen and (max-width: 46.1875em) {
+      .premium-priceList__tabLink {
+        padding: 5px 10px;
+        font-size: 14px; }
+        .premium-priceList__tabLink .hide-on-mobile {
+          display: none; } }
+    .premium-priceList__tabLink.active, .premium-priceList__tabLink:hover {
+      color: #fff;
+      border-color: #24adc1;
+      background-color: #24adc1; }
 
 .program-wrapper {
   padding: 40px 0 145px; }
@@ -5372,20 +5408,23 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  @in; }
+  align-items: flex-start; }
 
 .profile-teacher__content * {
   all: revert; }
 
+.profile-teacher__wrap {
+  margin: 0 auto 10px; }
+
 .profile-teacher__img {
-  min-width: 424px;
-  height: 239px;
+  min-width: 200px;
+  width: 200px;
+  height: 200px;
   position: relative;
   padding-top: 0%;
   overflow: hidden;
-  border-radius: 10px;
-  margin-left: 30px; }
+  border-radius: 50%;
+  margin-bottom: 10px; }
   .profile-teacher__img > img {
     position: absolute;
     top: 0;
@@ -5395,12 +5434,30 @@ body {
     object-fit: cover; }
   @media only screen and (max-width: 63.9375em) {
     .profile-teacher__img {
-      min-width: 100%;
-      height: auto;
-      padding-top: 68%;
-      margin: 20px 0 0 0; }
+      min-width: 100px;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto; }
       .profile-teacher__img .hide-on-bothTM {
         display: none !important; } }
+
+.profile-teacher__info {
+  margin-top: 20px;
+  text-align: center; }
+  @media only screen and (max-width: 46.1875em) {
+    .profile-teacher__info {
+      margin-top: 15px; }
+      .profile-teacher__info .hide-on-mobile {
+        display: none; } }
+
+.profile-teacher__name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-transform: uppercase; }
+
+.profile-teacher__sub {
+  color: #f33066; }
 
 .course #caurse-more,
 .course #comment-more {
@@ -11945,6 +12002,8 @@ i + i {
       flex-direction: column; }
       .group-flex__start.special .hide-on-bothTM {
         display: none !important; } }
+  .group-flex__start.special2 {
+    flex-direction: column; }
 
 .group-flex__sides {
   display: -webkit-flex;

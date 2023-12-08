@@ -583,5 +583,46 @@
                 // }
             }
         }
+
+        &__tab {
+            @include flexBox(center);
+            position: absolute;
+            top: 0;
+            left: 50%;
+
+            transform: translateX(-50%);
+            flex-flow: row wrap;
+
+            @include responsive_HD {
+                position: relative;
+                left: 0;
+                transform: initial;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__tabLink {
+            padding: 7px 15px;
+            border: 1px solid $color-desc;
+            background-color: transparent;
+
+            color: $color-desc;
+            border-radius: 5px;
+            transition: all 0.3s;
+            margin: 0 10px 10px 0;
+
+            @include responsive_mobile {
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+
+            &.active,
+            &:hover {
+                color: #fff;
+                border-color: $color-main;
+                background-color: $color-main;
+            }
+        }
     }
 }
