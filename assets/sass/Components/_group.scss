@@ -973,15 +973,17 @@
         }
 
         &__img {
-            @include imgPT(0%);
-            width: 400px;
-            height: 400px;
-            border-radius: 50%;
+            overflow: hidden;
+
+            & > img {
+                width: auto;
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+            }
 
             @include responsive_mobile {
-                width: 100%;
-                padding-top: 100%;
-                height: auto;
+                border-radius: 10px;
             }
         }
     }
