@@ -918,6 +918,14 @@
                     margin-bottom: 30px;
                 }
             }
+
+            &.special2 {
+                flex-direction: column;
+
+                .group-flex__item + .group-flex__item {
+                    margin: 20px 0 0 0;
+                }
+            }
         }
 
         &__item {
@@ -965,11 +973,15 @@
         }
 
         &__img {
-            @include imgPT(68%);
-            border-radius: 20px;
+            @include imgPT(0%);
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
 
             @include responsive_mobile {
-                border-radius: 10px;
+                width: 100%;
+                padding-top: 100%;
+                height: auto;
             }
         }
     }

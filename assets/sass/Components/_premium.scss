@@ -11,11 +11,11 @@
     }
 
     &-heading {
-        margin-bottom: 35px;
+        margin-bottom: 25px;
 
-        @include responsive_mobile {
-            margin-bottom: 25px;
-        }
+        // @include responsive_mobile {
+        //     margin-bottom: 25px;
+        // }
 
         &__title {
             font-size: 30px;
@@ -24,9 +24,11 @@
 
     &-priceList {
         &__heading {
-            position: absolute;
-            right: 0px;
-            top: 0;
+            // position: absolute;
+            // right: 0px;
+            // top: 0;
+
+            margin-bottom: 30px;
 
             @include responsive_mobile {
                 position: relative;
@@ -265,6 +267,11 @@
             font-size: 22px;
             font-weight: bold;
             margin-bottom: 8px;
+
+            &.special {
+                font-style: italic;
+                color: $color-main;
+            }
         }
 
         &__pricebase {
