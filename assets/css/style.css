@@ -8397,7 +8397,7 @@ body {
   border-radius: 5px; }
   .user-section__item .user-detail__title {
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     max-width: 100%;
@@ -12732,7 +12732,7 @@ i + i {
 .chat-detail {
   position: relative;
   width: 67%;
-  padding: 0 20px;
+  padding: 20px 0 20px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -12740,7 +12740,7 @@ i + i {
   @media only screen and (max-width: 46.1875em) {
     .chat-detail {
       width: 100%;
-      padding: 0; }
+      padding: 10px 0 0 0; }
       .chat-detail .hide-on-mobile {
         display: none; } }
   .chat-detail.special {
