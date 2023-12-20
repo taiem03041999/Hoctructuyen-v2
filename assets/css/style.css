@@ -5503,6 +5503,9 @@ body {
   .course-intro__wrapper {
     color: #fff;
     padding: 70px 0 60px; }
+    @media only screen and (min-width: 1650px) {
+      .course-intro__wrapper {
+        padding: 50px 0 40px; } }
     @media only screen and (max-width: 63.9375em) {
       .course-intro__wrapper {
         padding: 30px 0; }
@@ -5865,6 +5868,9 @@ body {
   max-width: 422px;
   text-align: center;
   padding-left: 40px; }
+  @media only screen and (min-width: 1650px) {
+    .course-sidebar {
+      top: 110px; } }
   @media only screen and (max-width: 1650px) {
     .course-sidebar {
       width: 22%; } }
@@ -5920,6 +5926,9 @@ body {
       object-fit: cover; }
   .course-sidebar__content {
     padding: 18px 10px 36px; }
+    @media only screen and (min-width: 1650px) {
+      .course-sidebar__content {
+        padding: 10px; } }
   .course-sidebar__price {
     padding-bottom: 5px; }
   .course-sidebar__sale {
@@ -5946,6 +5955,9 @@ body {
     align-items: center;
     padding: 16px 0;
     border-bottom: 1px solid rgba(78, 101, 121, 0.15); }
+    @media only screen and (min-width: 1650px) {
+      .course-sidebar__item {
+        padding: 8px 0; } }
     .course-sidebar__item:last-child {
       border-bottom: 0; }
     .course-sidebar__item svg {

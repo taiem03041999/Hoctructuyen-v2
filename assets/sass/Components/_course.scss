@@ -13,6 +13,10 @@
             color: #fff;
             padding: 70px 0 60px;
 
+            @include responsive_big {
+                padding: 50px 0 40px;
+            }
+
             @include responsive_bothTM {
                 padding: 30px 0;
             }
@@ -430,6 +434,10 @@
         text-align: center;
         padding-left: 40px;
 
+        @include responsive_big {
+            top: 110px;
+        }
+
         @include responsive_bigLow {
             width: 22%;
         }
@@ -479,6 +487,10 @@
 
         &__content {
             padding: 18px 10px 36px;
+
+            @include responsive_big {
+                padding: 10px;
+            }
         }
 
         &__price {
@@ -493,9 +505,6 @@
 
         &__base {
             color: $color-desc;
-        }
-
-        &__evaluate {
         }
 
         &__star {
@@ -522,6 +531,10 @@
             @include flexBox(bothSides);
             padding: 16px 0;
             border-bottom: 1px solid rgba($color: $color-desc, $alpha: 0.15);
+
+            @include responsive_big {
+                padding: 8px 0;
+            }
 
             &:last-child {
                 border-bottom: 0;
