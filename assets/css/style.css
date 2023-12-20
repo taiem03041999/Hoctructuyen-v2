@@ -9754,7 +9754,14 @@ i + i {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font-weight: 400; }
+  font-weight: 400;
+  padding-right: 10px;
+  font-size: 14px; }
+  .monitor-manager__text.special {
+    border: 0;
+    background-color: transparent;
+    text-decoration: underline;
+    color: #24adc1; }
 
 .monitor-manager__sub {
   font-size: 13px;
@@ -10173,6 +10180,31 @@ i + i {
     .monitor-chart__table .table-total, .monitor-chart__table .table-progress, .monitor-chart__table .table-total {
       width: 100%; }
       .monitor-chart__table .table-total .hide-on-mobile, .monitor-chart__table .table-progress .hide-on-mobile, .monitor-chart__table .table-total .hide-on-mobile {
+        display: none; } }
+  .monitor-chart__table.special .table-5 {
+    width: 5%; }
+  .monitor-chart__table.special .table-10 {
+    width: 10%; }
+  .monitor-chart__table.special .table-15 {
+    width: 15%; }
+  .monitor-chart__table.special .table-20 {
+    width: 20%; }
+  .monitor-chart__table.special .table-25 {
+    width: 25%; }
+  .monitor-chart__table.special .table-30 {
+    width: 30%; }
+  .monitor-chart__table.special .table-35 {
+    width: 35%; }
+  .monitor-chart__table.special .table-40 {
+    width: 40%; }
+  .monitor-chart__table.special .table-45 {
+    width: 45%; }
+  .monitor-chart__table.special .table-50 {
+    width: 50%; }
+  @media only screen and (max-width: 46.1875em) {
+    .monitor-chart__table.special .table-5, .monitor-chart__table.special .table-10, .monitor-chart__table.special .table-15, .monitor-chart__table.special .table-20, .monitor-chart__table.special .table-25, .monitor-chart__table.special .table-30, .monitor-chart__table.special .table-35, .monitor-chart__table.special .table-40, .monitor-chart__table.special .table-45, .monitor-chart__table.special .table-50 {
+      width: 100%; }
+      .monitor-chart__table.special .table-5 .hide-on-mobile, .monitor-chart__table.special .table-10 .hide-on-mobile, .monitor-chart__table.special .table-15 .hide-on-mobile, .monitor-chart__table.special .table-20 .hide-on-mobile, .monitor-chart__table.special .table-25 .hide-on-mobile, .monitor-chart__table.special .table-30 .hide-on-mobile, .monitor-chart__table.special .table-35 .hide-on-mobile, .monitor-chart__table.special .table-40 .hide-on-mobile, .monitor-chart__table.special .table-45 .hide-on-mobile, .monitor-chart__table.special .table-50 .hide-on-mobile {
         display: none; } }
 
 @media only screen and (max-width: 46.1875em) {
