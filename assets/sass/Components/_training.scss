@@ -540,6 +540,10 @@
 
             @include flexBox(hor);
 
+            @include responsive_HD {
+                height: 280px;
+            }
+
             @include responsive_table {
                 height: 300px;
             }
@@ -574,17 +578,17 @@
                 }
 
                 .training-banner {
-                    &__content {
-                        padding: 0 75px 0 0;
+                    // &__content {
+                    //     padding: 0 75px 0 0;
 
-                        @include responsive_fit {
-                            padding: 0 0 0 40px;
-                        }
+                    //     @include responsive_fit {
+                    //         padding: 0 0 0 40px;
+                    //     }
 
-                        @include responsive_bothTM {
-                            padding: 30px;
-                        }
-                    }
+                    //     @include responsive_bothTM {
+                    //         padding: 30px;
+                    //     }
+                    // }
 
                     &__btn {
                         color: $color-desc;
@@ -596,13 +600,13 @@
         &__content {
             position: relative;
             z-index: 2;
-            padding: 0 0 0 75px;
+            padding: 0 40px;
             text-align: center;
-            width: 61%;
+            width: 70%;
 
             @include responsive_fit {
-                width: 65%;
-                padding: 0 0 0 40px;
+                // width: 65%;
+                padding: 0 20px;
             }
 
             @include responsive_bothTM {
@@ -621,6 +625,10 @@
             color: #fff;
             font-weight: 500;
             padding-top: 10px;
+
+            @include responsive_HD {
+                font-size: 22px;
+            }
 
             @include responsive_table {
                 font-size: 18px;
@@ -644,15 +652,15 @@
         }
 
         &__img {
-            width: 26.5%;
+            width: 30%;
             @include imgPT(18%);
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             margin: -18% auto 0;
 
-            @include responsive_fit {
-                width: 28.5%;
-            }
+            // @include responsive_fit {
+            //     width: 28.5%;
+            // }
 
             @include responsive_table {
                 margin: 20px auto 0;

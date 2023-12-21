@@ -3068,6 +3068,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 1283px) {
+      .training-banner__inner {
+        height: 280px; }
+        .training-banner__inner .hide-on-pc-HD {
+          display: none; } }
     @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
       .training-banner__inner {
         height: 300px; } }
@@ -3093,28 +3098,17 @@ body {
       justify-content: right; }
       .training-banner__inner.right::after {
         background-color: rgba(78, 101, 121, 0.9); }
-      .training-banner__inner.right .training-banner__content {
-        padding: 0 75px 0 0; }
-        @media only screen and (max-width: 1440px) {
-          .training-banner__inner.right .training-banner__content {
-            padding: 0 0 0 40px; } }
-        @media only screen and (max-width: 63.9375em) {
-          .training-banner__inner.right .training-banner__content {
-            padding: 30px; }
-            .training-banner__inner.right .training-banner__content .hide-on-bothTM {
-              display: none !important; } }
       .training-banner__inner.right .training-banner__btn {
         color: #4e6579; }
   .training-banner__content {
     position: relative;
     z-index: 2;
-    padding: 0 0 0 75px;
+    padding: 0 40px;
     text-align: center;
-    width: 61%; }
+    width: 70%; }
     @media only screen and (max-width: 1440px) {
       .training-banner__content {
-        width: 65%;
-        padding: 0 0 0 40px; } }
+        padding: 0 20px; } }
     @media only screen and (max-width: 63.9375em) {
       .training-banner__content {
         width: 100%;
@@ -3129,6 +3123,11 @@ body {
     color: #fff;
     font-weight: 500;
     padding-top: 10px; }
+    @media only screen and (max-width: 1283px) {
+      .training-banner__title {
+        font-size: 22px; }
+        .training-banner__title .hide-on-pc-HD {
+          display: none; } }
     @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
       .training-banner__title {
         font-size: 18px; } }
@@ -3147,7 +3146,7 @@ body {
     margin-top: 25px;
     background-color: #fff; }
   .training-banner__img {
-    width: 26.5%;
+    width: 30%;
     position: relative;
     padding-top: 18%;
     overflow: hidden;
@@ -3161,9 +3160,6 @@ body {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-    @media only screen and (max-width: 1440px) {
-      .training-banner__img {
-        width: 28.5%; } }
     @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
       .training-banner__img {
         margin: 20px auto 0;
