@@ -1,6 +1,6 @@
 @font-face {
   font-family: "UTMASHeartbeat";
-  src: local("UTMASHeartbeat"), url("/assets/font/UTMASHeartbeat.ttf") format("truetype");
+  src: local("UTMASHeartbeat"), url("/Client/assets.ver2/UTMASHeartbeat.ttf") format("truetype");
   font-style: normal; }
 
 html {
