@@ -61,7 +61,8 @@
       margin-bottom: 20px;
       border-radius: 25px;
       background-color: $color-main;
-      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      box-shadow:
+        rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
         rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
       @include responsive_bothTM {
@@ -1609,6 +1610,10 @@
       }
     }
 
+    &__article p {
+      line-height: 26px !important;
+    }
+
     &__plan {
       padding-top: 26px;
       position: relative;
@@ -2176,6 +2181,10 @@
 
     &__content * {
       all: revert;
+    }
+
+    &__content p {
+      line-height: 26px !important;
     }
   }
 

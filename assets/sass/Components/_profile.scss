@@ -827,6 +827,10 @@
             all: revert;
         }
 
+        &__content p {
+            line-height: 26px !important;
+        }
+
         &__wrap {
             margin: 0 auto 10px;
         }

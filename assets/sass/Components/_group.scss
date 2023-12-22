@@ -972,6 +972,10 @@
             all: revert;
         }
 
+        &__text p {
+            line-height: 26px !important;
+        }
+
         &__img {
             overflow: hidden;
 
@@ -1106,6 +1110,10 @@
 
         &__text * {
             all: revert;
+        }
+
+        &__text p {
+            line-height: 26px !important;
         }
 
         &__img {

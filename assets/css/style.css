@@ -87,7 +87,7 @@ body {
   overflow-x: hidden;
   color: #18191b;
   font-family: "Roboto", sans-serif;
-  line-height: 26px;
+  line-height: 24px;
   margin: 0;
   font-size: 16px;
   font-weight: 400;
@@ -4046,6 +4046,9 @@ body {
 .single-content__detail * {
   all: revert; }
 
+.single-content__detail p {
+  line-height: 26px !important; }
+
 .single-content__like {
   border: 0;
   background: #24adc1;
@@ -5445,6 +5448,9 @@ body {
 .profile-teacher__content * {
   all: revert; }
 
+.profile-teacher__content p {
+  line-height: 26px !important; }
+
 .profile-teacher__wrap {
   margin: 0 auto 10px; }
 
@@ -5658,6 +5664,9 @@ body {
   font-size: 14px;
   color: #4e6579;
   all: revert; }
+
+.course-describe p {
+  line-height: 26px !important; }
 
 .course-accordion__item {
   padding-bottom: 10px; }
@@ -7382,6 +7391,9 @@ body {
     width: 100%;
     height: auto; }
 
+.user-detail__article p {
+  line-height: 26px !important; }
+
 .user-detail__plan {
   padding-top: 26px;
   position: relative; }
@@ -7811,6 +7823,9 @@ body {
 
 .user-introduce__content * {
   all: revert; }
+
+.user-introduce__content p {
+  line-height: 26px !important; }
 
 .user-support__content {
   display: -webkit-flex;
@@ -11176,6 +11191,8 @@ i + i {
     position: relative; }
     .tabs-content__detail * {
       all: revert; }
+    .tabs-content__detail p {
+      line-height: 26px !important; }
     .tabs-content__detail img {
       width: 100%; }
 
@@ -12113,6 +12130,9 @@ i + i {
 .group-detail__text * {
   all: revert; }
 
+.group-detail__text p {
+  line-height: 26px !important; }
+
 .group-detail__img {
   overflow: hidden; }
   .group-detail__img > img {
@@ -12225,6 +12245,9 @@ i + i {
 
 .group-cmt__text * {
   all: revert; }
+
+.group-cmt__text p {
+  line-height: 26px !important; }
 
 .group-cmt__img {
   display: grid;
