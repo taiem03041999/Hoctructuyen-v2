@@ -42,7 +42,8 @@ h4,
 h2,
 h3 {
   margin: 0;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 26px; }
 
 button:focus {
   box-shadow: none !important; }
@@ -84,7 +85,7 @@ body {
   overflow-x: hidden;
   color: #18191b;
   font-family: "Roboto", sans-serif;
-  line-height: 21px;
+  line-height: 26px;
   margin: 0;
   font-size: 16px;
   font-weight: 400;
