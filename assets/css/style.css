@@ -44,9 +44,6 @@ h3 {
   margin: 0;
   font-size: 16px; }
 
-p {
-  line-height: 26px !important; }
-
 button:focus {
   box-shadow: none !important; }
 
@@ -9525,7 +9522,8 @@ i + i {
     color: #18191b; }
   .monitor-info__text, .monitor-info__name, .monitor-info__desc {
     max-width: 90%;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    overflow: hidden; }
     @media only screen and (max-width: 46.1875em) {
       .monitor-info__text, .monitor-info__name, .monitor-info__desc {
         max-width: 75%; }
