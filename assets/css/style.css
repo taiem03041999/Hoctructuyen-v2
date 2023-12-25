@@ -1966,7 +1966,7 @@ body {
       margin-left: 24px; }
       @media only screen and (max-width: 46.1875em) {
         .intro-tabs__item + .intro-tabs__item {
-          margin: 10px 0 0 0; }
+          margin: 0 6px 6px 0; }
           .intro-tabs__item + .intro-tabs__item .hide-on-mobile {
             display: none; } }
     .intro-tabs__link {
