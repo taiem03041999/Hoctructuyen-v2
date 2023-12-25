@@ -65,20 +65,20 @@
             }
         }
 
-        &__item {
-            margin-top: -2px;
-
-            @include responsive_mobile {
-                margin: 0 6px 6px 0;
-            }
-        }
-
         &__item + &__item {
             margin-left: 24px;
 
             @include responsive_mobile {
                 // margin: 10px 0 0 0;
                 margin-left: 0;
+            }
+        }
+
+        &__item {
+            margin-top: -2px;
+
+            @include responsive_mobile {
+                margin: 0 6px 6px 0;
             }
         }
 
