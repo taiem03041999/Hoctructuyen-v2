@@ -772,6 +772,12 @@
                     }
                 }
             }
+
+            &.special {
+                @include responsive_mobile {
+                    flex-direction: row;
+                }
+            }
         }
 
         &__experience {

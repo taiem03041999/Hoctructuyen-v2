@@ -1746,6 +1746,11 @@ body {
               margin-top: 20px; }
               .account-teacher__group .account-form__group + .account-form__group .hide-on-mobile {
                 display: none; } }
+      @media only screen and (max-width: 46.1875em) {
+        .account-teacher__group.special {
+          flex-direction: row; }
+          .account-teacher__group.special .hide-on-mobile {
+            display: none; } }
     .account-teacher__experience {
       justify-content: space-between;
       margin: 30px 0 24px; }
@@ -12123,6 +12128,11 @@ i + i {
     .group-flex__sides {
       flex-direction: column; }
       .group-flex__sides .hide-on-mobile {
+        display: none; } }
+  @media only screen and (max-width: 46.1875em) {
+    .group-flex__sides.special {
+      flex-direction: row; }
+      .group-flex__sides.special .hide-on-mobile {
         display: none; } }
 
 .group-detail__text * {

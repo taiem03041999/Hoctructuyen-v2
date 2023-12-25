@@ -964,6 +964,12 @@
             @include responsive_mobile {
                 flex-direction: column;
             }
+
+            &.special {
+                @include responsive_mobile {
+                    flex-direction: row;
+                }
+            }
         }
     }
 
