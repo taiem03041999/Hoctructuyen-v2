@@ -407,6 +407,7 @@
         &__location {
             font-size: 13px;
             color: rgba($color: $color-desc, $alpha: 0.75);
+            @include lineDot(1);
         }
 
         &__pirce {

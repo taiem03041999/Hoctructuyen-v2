@@ -67,6 +67,10 @@
 
         &__item {
             margin-top: -2px;
+
+            @include responsive_mobile {
+                margin: 0 6px 6px 0;
+            }
         }
 
         &__item + &__item {
@@ -74,8 +78,7 @@
 
             @include responsive_mobile {
                 // margin: 10px 0 0 0;
-
-                margin: 0 6px 6px 0;
+                margin-left: 0;
             }
         }
 
