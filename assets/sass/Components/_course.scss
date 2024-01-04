@@ -893,12 +893,22 @@
                 position: relative;
                 right: 0px;
                 margin-right: 0;
+
+                &.special {
+                    margin-right: 12px;
+                }
             }
 
             &__input {
                 padding-left: 14px;
                 border-left: 1.4px solid rgba($color-desc, 0.6);
                 margin-right: 10px;
+
+                &.special {
+                    margin-right: 25px;
+                    padding-left: 0;
+                    border-left: 0;
+                }
             }
         }
 

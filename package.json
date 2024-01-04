@@ -1,15 +1,18 @@
 {
-  "name": "hoctructuyenv2",
+  "name": "hocttv2",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "sasstocss": "node-sass assets/sass/style.scss assets/css/style.css -w"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "node-sass": "^9.0.0"
+  "bugs": {
+    "url": "https://github.com/taiem03041999/Hoctructuyen-v2/issues"
   },
-  "devDependencies": {},
-  "description": ""
+  "homepage": "https://github.com/taiem03041999/Hoctructuyen-v2#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
 }

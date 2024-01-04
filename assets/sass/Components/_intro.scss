@@ -215,6 +215,19 @@
                     }
                 }
             }
+
+            &.special {
+                border: 1px solid rgba($color: $color-desc, $alpha: 0.1);
+                height: 45px;
+
+                @include responsive_big16 {
+                    @include flexBox(hor);
+                    position: relative;
+                    top: initial;
+                    left: initial;
+                    transform: initial;
+                }
+            }
         }
 
         &__input,
@@ -350,6 +363,52 @@
 
             @include responsive_mobile {
                 margin-right: 9px;
+            }
+        }
+
+        &__folder {
+            @include gridBox(2, 10px, 10px);
+            margin-top: 25px;
+        }
+
+        &__folderItem {
+            @include flexBox(both);
+            flex-direction: column;
+        }
+
+        &__folderImg {
+            width: 80px;
+            height: 80px;
+            @include imgPT(0%);
+        }
+
+        &__folderName {
+            color: $color-desc;
+            margin-top: 5px;
+        }
+
+        &__wrap {
+            @include flexBox(hor);
+            margin-top: 25px;
+        }
+
+        &__desc {
+            @include flexBox(both);
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid $color-main;
+            transition: all 0.3s;
+            color: $color-title;
+
+            & + & {
+                margin-left: 10px;
+            }
+
+            &.active,
+            &:hover {
+                background-color: $color-main;
+                color: #fff;
             }
         }
     }
