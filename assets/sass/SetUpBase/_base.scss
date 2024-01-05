@@ -68,6 +68,10 @@ body {
 
 .home.special .intro-tabs__cover {
   @include flexBox(hor);
+
+  @include responsive_mobile {
+    display: none;
+  }
 }
 
 .hide {
