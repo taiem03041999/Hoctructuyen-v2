@@ -2116,6 +2116,16 @@ body {
             top: initial;
             left: initial;
             transform: initial; } }
+      @media only screen and (max-width: 1600px) {
+        .intro-tabs__cover.special2 {
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          align-items: center;
+          position: relative;
+          top: initial;
+          left: initial;
+          transform: initial; } }
     .intro-tabs__input, .intro-tabs__submit, .intro-tabs__toggle {
       border: 0;
       background: transparent; }
