@@ -130,6 +130,12 @@ body {
       body .hide-on-mobile {
         display: none; } }
 
+.home.special .intro-tabs__cover {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center; }
+
 .hide {
   display: none !important; }
 
