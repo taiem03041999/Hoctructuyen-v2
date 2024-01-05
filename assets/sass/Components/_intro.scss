@@ -377,7 +377,7 @@
     }
 
     &__folder {
-      @include gridBox(2, 10px, 10px);
+      @include gridBox(3, 10px, 10px);
       margin-top: 25px;
     }
 
