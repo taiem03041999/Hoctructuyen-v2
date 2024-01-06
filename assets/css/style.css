@@ -2386,7 +2386,7 @@ body {
       margin-top: 52px; }
       @media only screen and (max-width: 46.1875em) {
         .intro-slide .swiper-scrollbar {
-          margin-top: 32px; }
+          margin-top: 10px; }
           .intro-slide .swiper-scrollbar .hide-on-mobile {
             display: none; } }
       .intro-slide .swiper-scrollbar-drag {
@@ -4169,7 +4169,6 @@ body {
     display: none; }
 
 .slide {
-  padding: 0 0 110px;
   overflow: hidden; }
   .slide-heading {
     font-size: 18px;
@@ -4684,7 +4683,7 @@ body {
       position: relative;
       display: block;
       margin-top: -50px;
-      left: 10px; }
+      left: 0; }
       .lecturers-info .hide-on-mobile {
         display: none; } }
   .lecturers-info__avatar {
@@ -4809,7 +4808,8 @@ body {
         padding: 0 20px 0 8px; } }
     @media only screen and (max-width: 46.1875em) {
       .lecturers-info__valeuate {
-        padding: 0 10px 0 4px; }
+        padding: 0 10px 0 4px;
+        font-size: 13px; }
         .lecturers-info__valeuate .hide-on-mobile {
           display: none; } }
   .lecturers-info__total {
@@ -4835,6 +4835,9 @@ body {
 .profile #sidebar-more,
 .profile #comment-more {
   display: none; }
+
+.profile-wrapper {
+  margin-bottom: 30px; }
 
 .profile-sidebar__wrapper {
   padding: 37px 36px;
@@ -4978,13 +4981,13 @@ body {
   margin-top: 15px; }
 
 .profile-content {
-  padding: 37px 0 145px 19.5px; }
+  padding: 37px 0 80px 19.5px; }
   @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
     .profile-content {
-      padding: 30px 0 130px 0; } }
+      padding: 30px 0 50px 0; } }
   @media only screen and (max-width: 46.1875em) {
     .profile-content {
-      padding: 30px 0; }
+      padding: 20px 0; }
       .profile-content .hide-on-mobile {
         display: none; } }
   .profile-content .program-page__number {
@@ -5237,7 +5240,6 @@ body {
   .profile-evaluate__total {
     text-align: center;
     width: 42%;
-    height: 100%;
     padding-right: 36px; }
     @media only screen and (max-width: 1650px) {
       .profile-evaluate__total {

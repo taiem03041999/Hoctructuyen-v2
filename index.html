@@ -3208,9 +3208,9 @@
         });
     </script>
 
-    <!-- trainingSwiper -->
+    <!-- trainingSwiper (chia sẻ kiến thức) -->
     <script>
-        var swiper = new Swiper(".trainingSwiper", {
+        var swiper = new Swiper(".training-slide .trainingSwiper", {
             autoplay: {
                 delay: 1000,
             },
@@ -3222,6 +3222,44 @@
 
             scrollbar: {
                 el: ".training-slide .swiper-scrollbar",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20,
+                },
+
+                550: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1000: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1400: {
+                    slidesPerView: 4,
+                    spaceBetween: 25,
+                },
+            },
+        });
+    </script>
+
+    <!-- trainingSwiper (Tin tức) -->
+    <script>
+        var swiper = new Swiper(".training-slide.special .trainingSwiper", {
+            autoplay: {
+                delay: 1000,
+            },
+            loop: false,
+            navigation: {
+                nextEl: ".training-slide.special .swiper-button-next",
+                prevEl: ".training-slide.special .swiper-button-prev",
+            },
+
+            scrollbar: {
+                el: ".training-slide.special .swiper-scrollbar",
             },
 
             breakpoints: {
