@@ -4169,7 +4169,13 @@ body {
     display: none; }
 
 .slide {
+  padding: 0 0 110px;
   overflow: hidden; }
+  @media only screen and (max-width: 63.9375em) {
+    .slide {
+      padding: 0 0 60px; }
+      .slide .hide-on-bothTM {
+        display: none !important; } }
   .slide-heading {
     font-size: 18px;
     padding-bottom: 24px; }

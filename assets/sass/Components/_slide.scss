@@ -1,23 +1,27 @@
 .slide {
-    // padding: 0 0 110px;
-    overflow: hidden;
+  padding: 0 0 110px;
+  overflow: hidden;
 
-    &-heading {
-        font-size: 18px;
-        padding-bottom: 24px;
+  @include responsive_bothTM {
+    padding: 0 0 60px;
+  }
+
+  &-heading {
+    font-size: 18px;
+    padding-bottom: 24px;
+  }
+
+  .swiper {
+    // overflow: initial;
+
+    &-slide-prev {
+      visibility: hidden;
     }
+  }
 
-    .swiper {
-        // overflow: initial;
-
-        &-slide-prev {
-            visibility: hidden;
-        }
+  .training {
+    &-secondary {
+      margin-top: 0;
     }
-
-    .training {
-        &-secondary {
-            margin-top: 0;
-        }
-    }
+  }
 }
