@@ -3447,10 +3447,12 @@ body {
       width: 100%;
       height: auto; }
       .training-content__img > img:first-child {
-        min-width: max-content; }
+        width: max-content;
+        max-width: 954px; }
         @media only screen and (max-width: 1440px) {
           .training-content__img > img:first-child {
-            min-width: 100%; } }
+            width: 100%;
+            max-width: 100%; } }
     .training-content__img img + img {
       margin-top: 20px; }
     .training-content__img.special {
@@ -3463,7 +3465,8 @@ body {
         margin-top: 40px; }
         @media only screen and (max-width: 1440px) {
           .training-content__img.special > img {
-            min-width: 100%;
+            width: 100%;
+            max-width: 100%;
             position: relative;
             top: initial;
             transform: initial;
