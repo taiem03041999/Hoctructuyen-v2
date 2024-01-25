@@ -861,7 +861,7 @@
 
         &:first-child {
           width: max-content;
-          max-width: 954px;
+          max-width: max-content;
 
           @include responsive_fit {
             width: 100%;

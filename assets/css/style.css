@@ -3448,7 +3448,7 @@ body {
       height: auto; }
       .training-content__img > img:first-child {
         width: max-content;
-        max-width: 954px; }
+        max-width: max-content; }
         @media only screen and (max-width: 1440px) {
           .training-content__img > img:first-child {
             width: 100%;
