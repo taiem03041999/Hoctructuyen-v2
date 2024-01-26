@@ -16,6 +16,53 @@
         @include responsive_bothTM {
             justify-content: center;
         }
+
+        &.special {
+            justify-content: initial;
+
+            @include responsive_bothTM {
+                justify-content: center;
+            }
+
+            .account-form {
+                background-color: #d6d6d6;
+                width: 38%;
+
+                &__title,
+                &__desc,
+                &__label {
+                    color: #fff;
+                }
+
+                &__link {
+                    color: $color-main;
+                    text-decoration: initial;
+                }
+
+                &__move {
+                    color: #fff;
+                }
+
+                &__check {
+                    margin-top: 14px;
+                }
+            }
+
+            .account-care {
+                &__label {
+                    margin-top: 1px;
+                    background-color: #fff;
+                }
+
+                &__value {
+                    color: #fff;
+                }
+
+                &__option {
+                    margin-top: 0;
+                }
+            }
+        }
     }
 
     &-register {
@@ -175,7 +222,7 @@
                 border-radius: 7px;
                 padding: 10px 32px 10px 20px;
                 transition: all 0.2s;
-                border: 1.4px solid rgba(112, 112, 112, 0.25);
+                border: 1px solid rgba(112, 112, 112, 0.25);
 
                 &:focus {
                     border-color: rgba($color-main, 0.8);

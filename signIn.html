@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hubcoach - Sign In</title>
+    <!-- Icon title -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/logo/icon.svg" />
+    <!-- fontAwesome Css -->
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
+
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Begin Header -->
+    <header id="header" class="header">
+        <div class="container-fluid">
+            <div class="header-wrapper">
+                <div class="header-activity">
+                    <a href="#" class="header-activity__logo">
+                        <img alt="Logo" src="/assets/images/logo/Logo.svg">
+                    </a>
+
+                    <nav class="header-activity__nav nav">
+                        <a class="header-activity__link nav-link" href="#">
+                            <svg id="Icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17.5"
+                                viewBox="0 0 20 17.5">
+                                <path id="Path_20" data-name="Path 20"
+                                    d="M5.833,22.167h-2.5A3.333,3.333,0,0,1,0,18.833v-2.5A3.333,3.333,0,0,1,3.333,13h2.5a3.333,3.333,0,0,1,3.333,3.333v2.5A3.333,3.333,0,0,1,5.833,22.167ZM7.5,16.333a1.667,1.667,0,0,0-1.667-1.667h-2.5a1.667,1.667,0,0,0-1.667,1.667v2.5A1.667,1.667,0,0,0,3.333,20.5h2.5A1.667,1.667,0,0,0,7.5,18.833Z"
+                                    transform="translate(0 -13)" fill="#18191b" />
+                                <path id="Path_21" data-name="Path 21"
+                                    d="M18.833,22.167h-2.5A3.333,3.333,0,0,1,13,18.833v-2.5A3.333,3.333,0,0,1,16.333,13h2.5a3.333,3.333,0,0,1,3.333,3.333v2.5A3.333,3.333,0,0,1,18.833,22.167ZM20.5,16.333a1.667,1.667,0,0,0-1.667-1.667h-2.5a1.667,1.667,0,0,0-1.667,1.667v2.5A1.667,1.667,0,0,0,16.333,20.5h2.5A1.667,1.667,0,0,0,20.5,18.833Z"
+                                    transform="translate(-2.167 -13)" fill="#18191b" />
+                                <path id="Path_22" data-name="Path 22"
+                                    d="M-.167,5H16.5a.833.833,0,0,1,0,1.667H-.167A.833.833,0,0,1-1,5.833.833.833,0,0,1-.167,5Z"
+                                    transform="translate(1.833 6.667)" fill="#18191b" />
+                                <path id="Path_23" data-name="Path 23"
+                                    d="M-.167,5H16.5a.833.833,0,0,1,0,1.667H-.167A.833.833,0,0,1-1,5.833.833.833,0,0,1-.167,5Z"
+                                    transform="translate(1.833 10.833)" fill="#18191b" />
+                            </svg>
+
+                            Danh mục khóa học
+                        </a>
+                        <a class="header-activity__link nav-link" href="#">
+                            Giới thiệu
+                        </a>
+                        <a class="header-activity__link nav-link" href="#">
+                            Hỗ trợ
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- add class "account" show info account -->
+                <div class="header-social">
+                    <div class="header-social__alert">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23.982" height="26.001"
+                            viewBox="0 0 17.982 20.001">
+                            <g id="bell" transform="translate(-3.009 -2.002)">
+                                <path id="Path_6510" data-name="Path 6510"
+                                    d="M20.52,15.21l-1.8-1.81V8.94A6.86,6.86,0,0,0,12.9,2.06,6.74,6.74,0,0,0,5.28,8.73V13.4l-1.8,1.81A1.64,1.64,0,0,0,4.64,18H8v.34A3.84,3.84,0,0,0,12,22a3.84,3.84,0,0,0,4-3.66V18h3.36a1.64,1.64,0,0,0,1.16-2.79ZM14,18.34A1.88,1.88,0,0,1,12,20a1.88,1.88,0,0,1-2-1.66V18h4ZM5.51,16l1.18-1.18a2,2,0,0,0,.59-1.42V8.73A4.73,4.73,0,0,1,8.9,5.17,4.67,4.67,0,0,1,12.64,4a4.86,4.86,0,0,1,4.08,4.9v4.5a2,2,0,0,0,.58,1.42L18.49,16Z"
+                                    transform="translate(0 0)" />
+                            </g>
+                        </svg>
+
+                        <span class="header-social__quantity">0</span>
+                    </div>
+
+                    <div class="header-social__auth">
+                        <a href="#" class="header-social__signIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10.5" height="14" viewBox="0 0 10.5 14">
+                                <g id="user" transform="translate(-3)">
+                                    <path id="Path_24" data-name="Path 24"
+                                        d="M9.5,7A3.5,3.5,0,1,0,6,3.5,3.5,3.5,0,0,0,9.5,7Zm0-5.833A2.333,2.333,0,1,1,7.167,3.5,2.333,2.333,0,0,1,9.5,1.167Z"
+                                        transform="translate(-1.25)" fill="#fff" />
+                                    <path id="Path_25" data-name="Path 25"
+                                        d="M8.25,14A5.256,5.256,0,0,0,3,19.25a.583.583,0,1,0,1.167,0,4.083,4.083,0,1,1,8.167,0,.583.583,0,0,0,1.167,0A5.256,5.256,0,0,0,8.25,14Z"
+                                        transform="translate(0 -5.833)" fill="#fff" />
+                                </g>
+                            </svg>
+
+                            Đăng nhập
+                        </a>
+
+                        <a href="#" class="header-social__signUp">
+                            Đăng ký
+                        </a>
+                    </div>
+
+                    <div class="dropdown">
+                        <div class="header-social__info" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="header-social__avatar">
+                                <img src="./assets/images/header/avatar.png" alt="Avatar">
+                            </div>
+
+                            <div class="header-social__service">
+                                <span class="header-social__name">
+                                    <h4>Hồ Trung Dũng</h4>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10.002" height="7.5"
+                                        viewBox="0 0 10.002 7.5">
+                                        <g id="arrow-downward" transform="translate(-4.999 -6.667)">
+                                            <path id="Path_6478" data-name="Path 6478"
+                                                d="M11,15.5a1.433,1.433,0,0,1-1.108-.533l-3.508-4.25a1.75,1.75,0,0,1-.217-1.842A1.467,1.467,0,0,1,7.491,8h7.017a1.467,1.467,0,0,1,1.325.875,1.75,1.75,0,0,1-.217,1.842l-3.508,4.25A1.433,1.433,0,0,1,11,15.5Z"
+                                                transform="translate(-1 -1.333)" fill="rgba(78,101,121,0.3)" />
+                                        </g>
+                                    </svg>
+                                </span>
+                                <p class="header-social__desc">Giám đốc IQS Center</p>
+                            </div>
+                        </div>
+
+                        <ul class="dropdown-menu header-social__dropdown" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item header-social__item" href="#">Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-scroll">
+                <div class="header-wrapper">
+                    <div class="header-activity">
+                        <a href="#" class="header-activity__logo">
+                            <img alt="Logo" src="/assets/images/logo/Logo.svg">
+                        </a>
+
+                        <nav class="header-activity__nav nav">
+                            <a class="header-activity__link nav-link" href="#">
+                                Giảng viên
+                            </a>
+                            <a class="header-activity__link nav-link" href="#">
+                                Khóa học
+                            </a>
+                        </nav>
+                    </div>
+
+                    <!-- add class "account" show info account -->
+                    <div class="header-social">
+                        <div class="header-social__alert">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23.982" height="26.001"
+                                viewBox="0 0 17.982 20.001">
+                                <g id="bell" transform="translate(-3.009 -2.002)">
+                                    <path id="Path_6510" data-name="Path 6510"
+                                        d="M20.52,15.21l-1.8-1.81V8.94A6.86,6.86,0,0,0,12.9,2.06,6.74,6.74,0,0,0,5.28,8.73V13.4l-1.8,1.81A1.64,1.64,0,0,0,4.64,18H8v.34A3.84,3.84,0,0,0,12,22a3.84,3.84,0,0,0,4-3.66V18h3.36a1.64,1.64,0,0,0,1.16-2.79ZM14,18.34A1.88,1.88,0,0,1,12,20a1.88,1.88,0,0,1-2-1.66V18h4ZM5.51,16l1.18-1.18a2,2,0,0,0,.59-1.42V8.73A4.73,4.73,0,0,1,8.9,5.17,4.67,4.67,0,0,1,12.64,4a4.86,4.86,0,0,1,4.08,4.9v4.5a2,2,0,0,0,.58,1.42L18.49,16Z"
+                                        transform="translate(0 0)" />
+                                </g>
+                            </svg>
+
+                            <span class="header-social__quantity">0</span>
+                        </div>
+
+                        <div class="header-social__auth">
+                            <a href="#" class="header-social__signIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10.5" height="14" viewBox="0 0 10.5 14">
+                                    <g id="user" transform="translate(-3)">
+                                        <path id="Path_24" data-name="Path 24"
+                                            d="M9.5,7A3.5,3.5,0,1,0,6,3.5,3.5,3.5,0,0,0,9.5,7Zm0-5.833A2.333,2.333,0,1,1,7.167,3.5,2.333,2.333,0,0,1,9.5,1.167Z"
+                                            transform="translate(-1.25)" fill="#fff" />
+                                        <path id="Path_25" data-name="Path 25"
+                                            d="M8.25,14A5.256,5.256,0,0,0,3,19.25a.583.583,0,1,0,1.167,0,4.083,4.083,0,1,1,8.167,0,.583.583,0,0,0,1.167,0A5.256,5.256,0,0,0,8.25,14Z"
+                                            transform="translate(0 -5.833)" fill="#fff" />
+                                    </g>
+                                </svg>
+
+                                Đăng nhập
+                            </a>
+
+                            <a href="#" class="header-social__signUp">
+                                Đăng ký
+                            </a>
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="header-social__info" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="header-social__avatar">
+                                    <img src="./assets/images/header/avatar.png" alt="Avatar">
+                                </div>
+
+                                <div class="header-social__service">
+                                    <span class="header-social__name">
+                                        <h4>Hồ Trung Dũng</h4>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10.002" height="7.5"
+                                            viewBox="0 0 10.002 7.5">
+                                            <g id="arrow-downward" transform="translate(-4.999 -6.667)">
+                                                <path id="Path_6478" data-name="Path 6478"
+                                                    d="M11,15.5a1.433,1.433,0,0,1-1.108-.533l-3.508-4.25a1.75,1.75,0,0,1-.217-1.842A1.467,1.467,0,0,1,7.491,8h7.017a1.467,1.467,0,0,1,1.325.875,1.75,1.75,0,0,1-.217,1.842l-3.508,4.25A1.433,1.433,0,0,1,11,15.5Z"
+                                                    transform="translate(-1 -1.333)" fill="rgba(78,101,121,0.3)" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <p class="header-social__desc">Giám đốc IQS Center</p>
+                                </div>
+                            </div>
+
+                            <ul class="dropdown-menu header-social__dropdown" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item header-social__item" href="#">Đăng xuất</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Begin Content -->
+    <main class="home">
+        <!-- Begin SignIn -->
+        <section class="account">
+            <div class="container-xl">
+                <div class="account-wrapper special">
+                    <div class="account-img">
+                        <img src="./assets/images/bg-signIn.png" alt="" />
+                    </div>
+
+                    <form class="account-form">
+                        <div class="account-form__header">
+                            <h2 class="account-form__title">
+                                Đăng nhập
+                            </h2>
+
+                            <p class="account-form__desc">
+                                Hệ sinh thái giáo dục trực tuyến hàng đầu
+                            </p>
+                        </div>
+
+                        <div class="account-form__main">
+                            <div class="account-form__group">
+                                <label for="passNewInput" class="account-form__label">
+                                    Số điện thoại
+                                </label>
+
+                                <input type="text" class="form-control account-form__input" id="passNewInput"
+                                    placeholder="Số điện thoại" maxlength="10"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1')">
+
+                                <div class="account-form__status">
+                                    <i class="fa-solid fa-circle-check account-form__icon input-success"></i>
+                                    <i class="fa-solid fa-circle-xmark account-form__icon input-error"></i>
+                                </div>
+                            </div>
+
+                            <div class="account-form__group">
+                                <label for="passNewInput" class="account-form__label">
+                                    Mật khẩu
+                                </label>
+
+                                <div class="account-form__view">
+                                    <input type="password" class="form-control account-form__input" id="passNewInput"
+                                        placeholder=" Mật khẩu mới">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="account-form__icon eye eye-open hide"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="account-form__icon eye eye-close"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="account-form__check">
+                                <div class="account-care__option">
+                                    <input type="checkbox" id="option1" class="account-care__input">
+                                    <label for="option1" class="account-care__label">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20">
+                                            <path id="Path_2122" data-name="Path 2122"
+                                                d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm4.3,7.61-4.57,6a1,1,0,0,1-1.58.01L7.71,12.51a1,1,0,0,1,1.58-1.23l1.63,2.08,3.78-5a1.006,1.006,0,0,1,1.6,1.22Z"
+                                                transform="translate(-2 -2)" fill="#27b737" />
+                                        </svg>
+                                    </label>
+                                    <label for="option1" class="account-care__value">
+                                        Ghi nhớ
+                                    </label>
+                                </div>
+
+                                <a href="#" class="account-form__link">
+                                    Quên mật khẩu ?
+                                </a>
+                            </div>
+
+                            <button type="button" class="account-form__btn">
+                                Đăng nhập
+                            </button>
+
+                            <span class="account-form__move">
+                                Chưa có tài khoản? <a href="#">Đăng ký</a>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- End SignIn -->
+    </main>
+    <!-- End Content -->
+
+    <!-- Header Menu offcanvas  -->
+    <div class="offcanvas offcanvas-end header-offcanvas" tabindex="-1" id="headerMenu"
+        aria-labelledby="headerMenuLabel">
+        <div class="offcanvas-body">
+            <span class="header-offcanvas__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33.333" height="33.333" viewBox="0 0 33.333 33.333"
+                    data-bs-dismiss="offcanvas">
+                    <path id="Path_6440" data-name="Path 6440"
+                        d="M18.667,2A16.667,16.667,0,1,0,35.333,18.667,16.667,16.667,0,0,0,18.667,2Zm4.517,18.817a1.673,1.673,0,1,1-2.367,2.367l-2.15-2.167-2.15,2.167a1.673,1.673,0,1,1-2.367-2.367l2.167-2.15-2.167-2.15a1.673,1.673,0,0,1,2.367-2.367l2.15,2.167,2.15-2.167a1.673,1.673,0,0,1,2.367,2.367l-2.167,2.15Z"
+                        transform="translate(-2 -2)" fill="#707070" />
+                </svg>
+            </span>
+
+            <div class="header-offcanvas__login">
+                <button type="button" class="header-activity__btn header-activity__logIn">
+                    Đăng nhập
+                </button>
+
+                <button type="button" class="header-activity__btn">
+                    Đăng ký
+                </button>
+            </div>
+
+            <div class="header-offcanvas__wrapper">
+                <nav class="nav flex-column header-offcanvas__nav">
+                    <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="24.995" viewBox="0 0 22.5 24.995">
+                            <g id="home" transform="translate(-3.75 -2.505)">
+                                <rect id="Rectangle_179" data-name="Rectangle 179" width="5" height="8.75"
+                                    transform="translate(12.5 17.5)" fill="#24afc2" />
+                                <path id="Path_6437" data-name="Path 6437"
+                                    d="M24.775,12.224l-9.637-9.85a1.25,1.25,0,0,0-1.775,0L3.725,12.236A2.5,2.5,0,0,0,3,14.024V24.5A2.5,2.5,0,0,0,5.363,27H9.25V15.749A1.25,1.25,0,0,1,10.5,14.5H18a1.25,1.25,0,0,1,1.25,1.25V27h3.888A2.5,2.5,0,0,0,25.5,24.5V14.024a2.587,2.587,0,0,0-.725-1.8Z"
+                                    transform="translate(0.75 0.501)" fill="#24afc2" />
+                            </g>
+                        </svg>
+
+                        Trang chủ
+                    </a>
+                    <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32.355" height="32.355"
+                            viewBox="0 0 35.355 35.355">
+                            <path id="handshake-angle"
+                                d="M7.289,7.289a6.265,6.265,0,0,1,4.686-5.144l3.613-.937a1.1,1.1,0,0,0,.479-.271L16.7.3a1.031,1.031,0,0,1,.739-.3h6.518A1.044,1.044,0,0,1,25,1.041V9.475a1.056,1.056,0,0,1-.323.76l-1.291,1.218h-9.85V8.33a1.041,1.041,0,0,0-2.082,0v5.206a2.082,2.082,0,0,1-4.165,0S7.268,7.289,7.289,7.289Zm6.247,6.247a4.165,4.165,0,0,1-8.33,0V8.049a6.286,6.286,0,0,0-3.061,3.925l-.937,3.613a1.1,1.1,0,0,1-.271.479L.3,16.7a1.031,1.031,0,0,0-.3.739v6.518A1.044,1.044,0,0,0,1.041,25H8.4a1.04,1.04,0,0,0,.739-.312l1.4-1.426a1.04,1.04,0,0,1,.739-.312l3.467-.021a6.285,6.285,0,0,0,5.987-4.55l1.364-4.831H13.536Z"
+                                transform="translate(17.678) rotate(45)" fill="#24afc2" />
+                        </svg>
+
+
+                        Hợp tác với chúng tôi
+                    </a>
+                    <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 20 25">
+                            <path id="Path_6439" data-name="Path 6439"
+                                d="M20.25,2H7.75A3.75,3.75,0,0,0,4,5.75v17.5A3.75,3.75,0,0,0,7.75,27h12.5A3.75,3.75,0,0,0,24,23.25V5.75A3.75,3.75,0,0,0,20.25,2ZM14,22a1.875,1.875,0,1,1,1.875-1.875A1.875,1.875,0,0,1,14,22ZM17.125,9.5h-6.25a1.25,1.25,0,0,1,0-2.5h6.25a1.25,1.25,0,0,1,0,2.5Z"
+                                transform="translate(-4 -2)" fill="#24afc2" />
+                        </svg>
+
+                        Tải ứng dụng
+                    </a>
+
+                    <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                            <path id="Path_6438" data-name="Path 6438"
+                                d="M14.5,2A12.5,12.5,0,1,0,27,14.5,12.5,12.5,0,0,0,14.5,2Zm0,20a1.25,1.25,0,1,1,1.25-1.25A1.25,1.25,0,0,1,14.5,22Zm1.25-6.45V17a1.25,1.25,0,0,1-2.5,0V14.5a1.25,1.25,0,0,1,1.25-1.25,1.875,1.875,0,1,0-1.875-1.875,1.25,1.25,0,0,1-2.5,0A4.375,4.375,0,1,1,15.75,15.55Z"
+                                transform="translate(-2 -2)" fill="#24afc2" />
+                        </svg>
+
+                        Trợ giúp
+                    </a>
+
+                </nav>
+
+                <nav class="nav flex-column header-offcanvas__nav">
+                    <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+                            <g id="Group" transform="translate(-1048 -349.267)">
+                                <circle id="Ellipse" cx="22.5" cy="22.5" r="22.5" transform="translate(1048 349.267)"
+                                    fill="#caf0f5" opacity="0.5" />
+                                <path id="plane-alt"
+                                    d="M9,0H6.651L9.185,7.508h-4.2L4.078,6.129A2.5,2.5,0,0,0,1.99,5.005H.013L1.849,10.01,0,15.016H1.98A2.5,2.5,0,0,0,4.065,13.9l.918-1.382H9.188L6.651,20.021H9a2.5,2.5,0,0,0,2.2-1.3l3.455-6.2h2.757a2.573,2.573,0,0,0,2.558-2.086A2.5,2.5,0,0,0,17.5,7.508H14.649L11.191,1.3A2.5,2.5,0,0,0,9,0Z"
+                                    transform="translate(1060.49 381.767) rotate(-90)" fill="#1895a9" />
+                            </g>
+                        </svg>
+
+                        Vé máy bay
+                    </a>
+                    <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+                            <g id="Group" transform="translate(-1200.5 -404.267)">
+                                <circle id="Ellipse" cx="22.5" cy="22.5" r="22.5" transform="translate(1200.5 404.267)"
+                                    fill="#ffd3d1" opacity="0.5" />
+                                <path id="bed-alt"
+                                    d="M0,10.167v-5A4.171,4.171,0,0,1,4.167,1H15.833A4.171,4.171,0,0,1,20,5.167v5H17.5V9.333A3.337,3.337,0,0,0,14.167,6H12.5A3.313,3.313,0,0,0,10,7.152,3.313,3.313,0,0,0,7.5,6H5.833A3.337,3.337,0,0,0,2.5,9.333v.833Zm7.5-2.5H5.833A1.668,1.668,0,0,0,4.167,9.333v.833h5V9.333A1.668,1.668,0,0,0,7.5,7.667Zm8.333,1.667a1.668,1.668,0,0,0-1.667-1.667H12.5a1.668,1.668,0,0,0-1.667,1.667v.833h5ZM0,11.833v5a.833.833,0,0,0,1.667,0V15.167H18.333v1.667a.833.833,0,0,0,1.667,0v-5Z"
+                                    transform="translate(1213.25 417.434)" fill="#bf4139" />
+                            </g>
+                        </svg>
+
+                        Phòng khách sạn
+                    </a>
+                    <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+                            <g id="Icon" transform="translate(-51 -258)">
+                                <circle id="Ellipse" cx="22.5" cy="22.5" r="22.5" transform="translate(51 258)"
+                                    fill="#78338a" />
+                                <path id="Subtraction_1" data-name="Subtraction 1"
+                                    d="M22.5,45c-.669,0-1.346-.03-2.012-.089V38.976H17.476V36.967h10.04v2.009H24.505v5.936C23.838,44.971,23.164,45,22.5,45Zm9.033-1.887v-19.2A3.016,3.016,0,0,0,28.521,20.9H16.473a3.016,3.016,0,0,0-3.012,3.012V43.11a22.5,22.5,0,1,1,18.074,0Zm-4.017-8.154H25.509V32.952h2.008v2.007Zm-4.016,0H21.493V32.952H23.5v2.007Zm-4.016,0H17.476V32.952h2.009v2.007Zm8.032-4.016H25.509V28.936h2.008v2.007Zm-4.016,0H21.493V28.936H23.5v2.007Zm-4.016,0H17.476V28.936h2.009v2.007Zm8.032-4.017H25.509V24.919h2.008v2.007Zm-4.016,0H21.493V24.919H23.5v2.007Zm-4.016,0H17.476V24.919h2.009v2.007Z"
+                                    transform="translate(51 258)" fill="#eee8ff" />
+                                <path id="plane-alt"
+                                    d="M5.4,0H3.99L5.51,4.5H2.989l-.543-.827A1.5,1.5,0,0,0,1.193,3H.008l1.1,3L0,9.007H1.187a1.5,1.5,0,0,0,1.251-.672l.55-.829H5.511L3.99,12.01H5.4a1.5,1.5,0,0,0,1.318-.782L8.788,7.506h1.654a1.543,1.543,0,0,0,1.535-1.251A1.5,1.5,0,0,0,10.495,4.5H8.788L6.713.779A1.5,1.5,0,0,0,5.4,0Z"
+                                    transform="translate(68 262.982)" fill="#7e2884" />
+                            </g>
+                        </svg>
+
+                        Combo vé & phòng
+                    </a>
+
+                    <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+                            <g id="Icon" transform="translate(-51.5 -258)">
+                                <circle id="Ellipse" cx="22.5" cy="22.5" r="22.5" transform="translate(51.5 258)"
+                                    fill="#d2f1d7" opacity="0.5" />
+                                <path id="grin"
+                                    d="M10,0A10.011,10.011,0,0,0,0,10c.5,13.25,19.5,13.244,20,0A10.011,10.011,0,0,0,10,0Zm2.917,6.667a1.25,1.25,0,1,1-1.25,1.25A1.25,1.25,0,0,1,12.917,6.667Zm-5.833,0a1.25,1.25,0,1,1-1.25,1.25A1.25,1.25,0,0,1,7.083,6.667Zm7.785,6.285A5.689,5.689,0,0,1,10,15.833a5.7,5.7,0,0,1-4.873-2.882A.833.833,0,0,1,6,11.687a12.833,12.833,0,0,0,4,.813,12.833,12.833,0,0,0,3.993-.813.833.833,0,0,1,.875,1.265Z"
+                                    transform="translate(64.25 270.532)" fill="#09883e" />
+                            </g>
+                        </svg>
+
+                        Phòng khách sạn
+                    </a>
+                </nav>
+
+                <div class="header-offcanvas__info">
+                    <h3 class="header-offcanvas__title">
+                        Thông tin liên hệ
+                    </h3>
+
+                    <div class="header-offcanvas__position">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20">
+                            <g id="pin" transform="translate(-4 -2)">
+                                <circle id="Ellipse_7" data-name="Ellipse 7" cx="1.5" cy="1.5" r="1.5"
+                                    transform="translate(10.5 8)" fill="#24afc2" />
+                                <path id="Path_6433" data-name="Path 6433"
+                                    d="M12,2A8,8,0,0,0,4,9.92c0,5.48,7.05,11.58,7.35,11.84a1,1,0,0,0,1.3,0C13,21.5,20,15.4,20,9.92A8,8,0,0,0,12,2Zm0,11a3.5,3.5,0,1,1,3.5-3.5A3.5,3.5,0,0,1,12,13Z"
+                                    fill="#24afc2" />
+                            </g>
+                        </svg>
+
+                        <span class="header-offcanvas__text">
+                            <span>DKKD:</span> Số 2/132 Nguyễn Xiển, Thanh Xuân, Hà Nội
+                        </span>
+                    </div>
+
+                    <div class="header-offcanvas__position">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20">
+                            <g id="pin" transform="translate(-4 -2)">
+                                <circle id="Ellipse_7" data-name="Ellipse 7" cx="1.5" cy="1.5" r="1.5"
+                                    transform="translate(10.5 8)" fill="#24afc2" />
+                                <path id="Path_6433" data-name="Path 6433"
+                                    d="M12,2A8,8,0,0,0,4,9.92c0,5.48,7.05,11.58,7.35,11.84a1,1,0,0,0,1.3,0C13,21.5,20,15.4,20,9.92A8,8,0,0,0,12,2Zm0,11a3.5,3.5,0,1,1,3.5-3.5A3.5,3.5,0,0,1,12,13Z"
+                                    fill="#24afc2" />
+                            </g>
+                        </svg>
+
+                        <span class="header-offcanvas__text">
+                            <span>VPGD:</span> Phòng 2602, Tòa HH3B - KDT Linh Đàm, Hoàng Mai, Hà Nội
+                        </span>
+                    </div>
+
+                    <div class="header-offcanvas__contact">
+                        <a href="#" class="header-offcanvas__phone">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="25" height="25" viewBox="0 0 25 25">
+                                <defs>
+                                    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1"
+                                        gradientUnits="objectBoundingBox">
+                                        <stop offset="0" stop-color="#24afc2" />
+                                        <stop offset="1" stop-color="#1895a9" />
+                                    </linearGradient>
+                                </defs>
+                                <g id="phone-call" transform="translate(-2.5 -2.5)">
+                                    <path id="Path_6434" data-name="Path 6434"
+                                        d="M13.25,8.5A3.75,3.75,0,0,1,17,12.25a1.25,1.25,0,0,0,2.5,0A6.25,6.25,0,0,0,13.25,6a1.25,1.25,0,1,0,0,2.5Z"
+                                        transform="translate(3 1.5)" fill="url(#linear-gradient)" />
+                                    <path id="Path_6435" data-name="Path 6435"
+                                        d="M13.25,4.5A8.75,8.75,0,0,1,22,13.25a1.25,1.25,0,0,0,2.5,0A11.25,11.25,0,0,0,13.25,2a1.25,1.25,0,0,0,0,2.5Z"
+                                        transform="translate(3 0.5)" fill="url(#linear-gradient)" />
+                                    <path id="Path_6436" data-name="Path 6436"
+                                        d="M26.688,19.388a1.25,1.25,0,0,0-.9-.812l-7.5-1.712a1.25,1.25,0,0,0-1.15.325c-.175.163-.187.175-1,1.725A12.388,12.388,0,0,1,10.05,12.8c1.588-.8,1.6-.8,1.763-.988a1.25,1.25,0,0,0,.325-1.15L10.425,3.25a1.25,1.25,0,0,0-.812-.9,4.738,4.738,0,0,0-.9-.225A4.925,4.925,0,0,0,7.75,2,5.75,5.75,0,0,0,2,7.75,19.275,19.275,0,0,0,21.25,27,5.75,5.75,0,0,0,27,21.25a5.963,5.963,0,0,0-.075-.95A5.425,5.425,0,0,0,26.688,19.388Z"
+                                        transform="translate(0.5 0.5)" fill="url(#linear-gradient)" />
+                                </g>
+                            </svg>
+
+                            <div class="header-offcanvas__detail">
+                                <span class="header-offcanvas__sub">
+                                    Hỗ trợ 24/7
+                                </span>
+
+                                <span class="header-offcanvas__name">
+                                    091.121.8886
+                                </span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="header-offcanvas__phone">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="25" height="25" viewBox="0 0 25 25">
+                                <defs>
+                                    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1"
+                                        gradientUnits="objectBoundingBox">
+                                        <stop offset="0" stop-color="#24afc2" />
+                                        <stop offset="1" stop-color="#1895a9" />
+                                    </linearGradient>
+                                </defs>
+                                <g id="phone-call" transform="translate(-2.5 -2.5)">
+                                    <path id="Path_6434" data-name="Path 6434"
+                                        d="M13.25,8.5A3.75,3.75,0,0,1,17,12.25a1.25,1.25,0,0,0,2.5,0A6.25,6.25,0,0,0,13.25,6a1.25,1.25,0,1,0,0,2.5Z"
+                                        transform="translate(3 1.5)" fill="url(#linear-gradient)" />
+                                    <path id="Path_6435" data-name="Path 6435"
+                                        d="M13.25,4.5A8.75,8.75,0,0,1,22,13.25a1.25,1.25,0,0,0,2.5,0A11.25,11.25,0,0,0,13.25,2a1.25,1.25,0,0,0,0,2.5Z"
+                                        transform="translate(3 0.5)" fill="url(#linear-gradient)" />
+                                    <path id="Path_6436" data-name="Path 6436"
+                                        d="M26.688,19.388a1.25,1.25,0,0,0-.9-.812l-7.5-1.712a1.25,1.25,0,0,0-1.15.325c-.175.163-.187.175-1,1.725A12.388,12.388,0,0,1,10.05,12.8c1.588-.8,1.6-.8,1.763-.988a1.25,1.25,0,0,0,.325-1.15L10.425,3.25a1.25,1.25,0,0,0-.812-.9,4.738,4.738,0,0,0-.9-.225A4.925,4.925,0,0,0,7.75,2,5.75,5.75,0,0,0,2,7.75,19.275,19.275,0,0,0,21.25,27,5.75,5.75,0,0,0,27,21.25a5.963,5.963,0,0,0-.075-.95A5.425,5.425,0,0,0,26.688,19.388Z"
+                                        transform="translate(0.5 0.5)" fill="url(#linear-gradient)" />
+                                </g>
+                            </svg>
+
+                            <div class="header-offcanvas__detail">
+                                <span class="header-offcanvas__sub">
+                                    Hỗ trợ 24/7
+                                </span>
+
+                                <span class="header-offcanvas__name">
+                                    091.121.8886
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="header-offcanvas__copyright">
+                    2023 © Designed by Infinity Technology
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS -->
+    <script type="text/javascript" src="./assets/js/Library/jquery.min.js"></script>
+    <!-- Script Bootstrap -->
+    <script type="text/javascript" src="./assets/js/Library/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script type="text/javascript" src="./assets/js/Library/swiper-bundle.min.js"></script>
+    <!-- Handle View Pass JS -->
+    <script src="./assets/js/eyePass.js"></script>
+    <!-- Handle Item General -->
+    <script src="./assets/js/general.js"></script>
+
+    <!-- ================ Header Scroll ================= -->
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        const headerScroll = document.querySelector(".header-scroll");
+        const headerMain = document.querySelector(".header");
+        var sticky = headerMain.offsetTop + 198;
+
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                headerScroll.classList.add('active');
+            } else {
+                headerScroll.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+
+</html>
