@@ -115,11 +115,7 @@
 
         width: 100%;
         height: 65%;
-        background-image: linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0.01) 0%,
-          #000 120%
-        );
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, #000 120%);
       }
 
       & > i {
@@ -466,6 +462,10 @@
         &-next,
         &-prev {
           --width: -50px;
+
+          @include responsive_fitSub {
+            --width: 0;
+          }
 
           @include responsive_bothTM {
             display: none;

@@ -3133,6 +3133,9 @@ body {
             display: none !important; } }
     .training-slide .swiper-button-next, .training-slide .swiper-button-prev {
       --width: -50px; }
+      @media only screen and (max-width: 1399px) {
+        .training-slide .swiper-button-next, .training-slide .swiper-button-prev {
+          --width: 0; } }
       @media only screen and (max-width: 63.9375em) {
         .training-slide .swiper-button-next, .training-slide .swiper-button-prev {
           display: none; }
