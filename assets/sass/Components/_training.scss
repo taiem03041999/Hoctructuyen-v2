@@ -657,10 +657,10 @@
 
     &__img {
       width: 30%;
-      @include imgPT(18%);
+      @include imgPT(20.15%);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
-      margin: -18% auto 0;
+      margin: -20.15% auto 0;
 
       // @include responsive_fit {
       //     width: 28.5%;
@@ -677,7 +677,7 @@
         margin: 20px auto 0;
         width: 100%;
         border-radius: 10px;
-        @include imgPT(57%);
+        @include imgPT(68%);
       }
     }
   }
