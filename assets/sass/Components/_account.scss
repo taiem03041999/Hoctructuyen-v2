@@ -24,44 +24,44 @@
                 justify-content: center;
             }
 
-            .account-form {
-                background-color: #d6d6d6;
-                width: 38%;
+            // .account-form {
+            //     background-color: #d6d6d6;
+            //     width: 38%;
 
-                &__title,
-                &__desc,
-                &__label {
-                    color: #fff;
-                }
+            //     &__title,
+            //     &__desc,
+            //     &__label {
+            //         color: #fff;
+            //     }
 
-                &__link {
-                    color: $color-main;
-                    text-decoration: initial;
-                }
+            //     &__link {
+            //         color: $color-main;
+            //         text-decoration: initial;
+            //     }
 
-                &__move {
-                    color: #fff;
-                }
+            //     &__move {
+            //         color: #fff;
+            //     }
 
-                &__check {
-                    margin-top: 14px;
-                }
-            }
+            //     &__check {
+            //         margin-top: 14px;
+            //     }
+            // }
 
-            .account-care {
-                &__label {
-                    margin-top: 1px;
-                    background-color: #fff;
-                }
+            // .account-care {
+            //     &__label {
+            //         margin-top: 1px;
+            //         background-color: #fff;
+            //     }
 
-                &__value {
-                    color: #fff;
-                }
+            //     &__value {
+            //         color: #fff;
+            //     }
 
-                &__option {
-                    margin-top: 0;
-                }
-            }
+            //     &__option {
+            //         margin-top: 0;
+            //     }
+            // }
         }
     }
 

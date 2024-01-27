@@ -1237,25 +1237,6 @@ body {
           justify-content: center; }
           .account-wrapper.special .hide-on-bothTM {
             display: none !important; } }
-      .account-wrapper.special .account-form {
-        background-color: #d6d6d6;
-        width: 38%; }
-        .account-wrapper.special .account-form__title, .account-wrapper.special .account-form__desc, .account-wrapper.special .account-form__label {
-          color: #fff; }
-        .account-wrapper.special .account-form__link {
-          color: #24adc1;
-          text-decoration: initial; }
-        .account-wrapper.special .account-form__move {
-          color: #fff; }
-        .account-wrapper.special .account-form__check {
-          margin-top: 14px; }
-      .account-wrapper.special .account-care__label {
-        margin-top: 1px;
-        background-color: #fff; }
-      .account-wrapper.special .account-care__value {
-        color: #fff; }
-      .account-wrapper.special .account-care__option {
-        margin-top: 0; }
   .account-register {
     position: relative;
     align-items: stretch; }
